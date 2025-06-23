@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-uraed7g4)!^re9l5ifqol$&_=5!o=12t@pu*i8+@ir7f+oo!&3
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["*"]
 
 
 # Application definition
@@ -42,6 +42,7 @@ INSTALLED_APPS = [
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware', 
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
@@ -118,13 +119,10 @@ USE_TZ = True
 
 import os
 
-# URL to use when referring to static files (e.g. in templates)
 STATIC_URL = '/static/'
 
-# Path where collectstatic will copy all static files for production
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
-# Additional directories Django will look for static files
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'static'),
 ]
