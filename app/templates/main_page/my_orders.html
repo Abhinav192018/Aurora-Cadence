@@ -1,0 +1,100 @@
+{%extends 'base.html'%}
+{%load static%}
+{% block title %}My Orders | Aurora Cadence{% endblock %}
+{%block content%}
+<link rel="stylesheet" href="{% static 'css/my_orders.css' %}">
+
+
+<div class="container">
+    <div class="header">
+        <h1 class="text-white">My Orders</h1>
+        <p class="text-white">Track and manage your purchase history</p>
+    </div>
+
+    <div class="orders-grid">
+        <!-- Order 1 -->
+        <div class="order-card">
+            <div class="order-header">
+                <div>
+                    <div class="order-id">Order #ORD-2024-001</div>
+                    <div class="order-date">Placed on June 15, 2025</div>
+                </div>
+                <div class="order-status status-delivered"><span class="text-black opacity-75">Expected Delivery on :</span> Jun-02 - jun-04</div>
+            </div>
+
+            <div class="products-list">
+                <div class="product-item">
+                    <div class="product-image" style="overflow: hidden;">
+                        <img src="https://i.pinimg.com/736x/72/da/3c/72da3c33dd6f10a501718268b607af16.jpg" alt="product image"  style="height: 60px; width: 60px; ">
+                    </div>
+                    <div class="product-details">
+                        <div class="product-name">Ear Ring</div>
+                        <div class="product-info">Quantity: 1</div>
+                    </div>
+                    <div class="product-price">₹500</div>
+                </div>
+                <div class="product-item">
+                    <div class="product-image" style="overflow: hidden;">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTo5Gn1IktT9WzpeO_TB9OV0LWFWWzKka3upQ&s" alt="product image" style="height: 60px; width: 60px;">
+                    </div>
+                    <div class="product-details">
+                        <div class="product-name">Ear ring</div>
+                        <div class="product-info">Quantity: 2</div>
+                    </div>
+                    <div class="product-price">₹500</div>
+                </div>
+            </div>
+
+            <div class="order-total">
+                <span class="total-label">Total Amount:</span>
+                <span class="total-amount">₹1000</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="orders-grid">
+        <!-- Order 1 -->
+        <div class="order-card">
+            <div class="order-header">
+                <div>
+                    <div class="order-id">Order #ORD-2024-001</div>
+                    <div class="order-date">Placed on June 15, 2025</div>
+                </div>
+                <div class="order-status status-delivered"><span class="text-black opacity-75">Expected Delivery on :</span> Jun-10 - jun-12</div>
+            </div>
+
+            <div class="products-list">
+                <div class="product-item">
+                    <div class="product-image" style="overflow: hidden;">
+                        <img src="https://i.pinimg.com/736x/72/da/3c/72da3c33dd6f10a501718268b607af16.jpg" alt="product image"  style="height: 60px; width: 60px; ">
+                    </div>
+                    <div class="product-details">
+                        <div class="product-name">Ear Ring</div>
+                        <div class="product-info">Quantity: 1</div>
+                    </div>
+                    <div class="product-price">₹500</div>
+                </div>
+                <div class="product-item">
+                    <div class="product-image" style="overflow: hidden;">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTo5Gn1IktT9WzpeO_TB9OV0LWFWWzKka3upQ&s" alt="product image" style="height: 60px; width: 60px;">
+                    </div>
+                    <div class="product-details">
+                        <div class="product-name">Ear ring</div>
+                        <div class="product-info">Quantity: 2</div>
+                    </div>
+                    <div class="product-price">₹2000</div>
+                </div>
+            </div>
+
+            <div class="order-total">
+                <span class="total-label">Total Amount:</span>
+                <span class="total-amount">₹2500</span>
+            </div>
+        </div>
+     
+    </div>
+</div>
+
+
+
+{%endblock%}

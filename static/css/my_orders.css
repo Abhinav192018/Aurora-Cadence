@@ -1,0 +1,309 @@
+        body {
+            background: #ffffff;
+            color: #000000;
+            min-height: 100vh;
+            line-height: 1.6;
+            margin-top: 100px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding: 40px 0;
+            background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("https://flyingbeads.in/wp-content/uploads/2023/07/20230718_160313-scaled.jpg");
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: cover;
+            border-radius: 10px;
+            border: 1px solid #e0e0e0;
+            color: white;
+            /* Optional: makes text readable */
+        }
+
+
+
+        .header h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #000000;
+            margin-bottom: 10px;
+        }
+
+        .header p {
+            color: #666666;
+            font-size: 1.1rem;
+        }
+
+        .orders-grid {
+            display: grid;
+            gap: 25px;
+            margin-bottom: 40px;
+        }
+
+        .order-card {
+            background: #ffffff;
+            border: 1px solid #e0e0e0;
+            border-radius: 15px;
+            padding: 25px;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .order-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: #000000;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .order-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+            border-color: #cccccc;
+        }
+
+        .order-card:hover::before {
+            opacity: 1;
+        }
+
+        .order-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .order-id {
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: #000000;
+        }
+
+        .order-date {
+            color: #666666;
+            font-size: 0.9rem;
+        }
+
+        .order-status {
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .status-delivered {
+            background: #f0f0f0;
+            color: #000000;
+            border: 1px solid #cccccc;
+        }
+
+        .status-processing {
+            background: #f5f5f5;
+            color: #333333;
+            border: 1px solid #999999;
+        }
+
+        .status-shipped {
+            background: #f8f8f8;
+            color: #666666;
+            border: 1px solid #aaaaaa;
+        }
+
+        .products-list {
+            margin-bottom: 20px;
+        }
+
+        .product-item {
+            display: flex;
+            align-items: center;
+            padding: 15px 0;
+            border-bottom: 1px solid #e0e0e0;
+            transition: all 0.3s ease;
+        }
+
+        .product-item:last-child {
+            border-bottom: none;
+        }
+
+        .product-item:hover {
+            background: #f8f8f8;
+            border-radius: 8px;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+
+        .product-image {
+            width: 60px;
+            height: 60px;
+            background: #f0f0f0;
+            border-radius: 8px;
+            margin-right: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid #e0e0e0;
+        }
+
+        .product-image svg {
+            width: 30px;
+            height: 30px;
+            color: #666666;
+        }
+
+        .product-details {
+            flex: 1;
+        }
+
+        .product-name {
+            font-weight: 600;
+            color: #000000;
+            margin-bottom: 5px;
+            font-size: 1rem;
+        }
+
+        .product-info {
+            color: #666666;
+            font-size: 0.9rem;
+        }
+
+        .product-price {
+            font-weight: 600;
+            color: #000000;
+            font-size: 1.1rem;
+        }
+
+        .order-total {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-top: 15px;
+            border-top: 2px solid #e0e0e0;
+            margin-top: 15px;
+        }
+
+        .total-label {
+            font-size: 1.1rem;
+            color: #666666;
+        }
+
+        .total-amount {
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: #000000;
+        }
+
+        .action-buttons {
+            display: flex;
+            gap: 10px;
+            margin-top: 20px;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+            text-align: center;
+            font-size: 0.9rem;
+        }
+
+        .btn-primary {
+            background: #000000;
+            color: #ffffff;
+            border: 2px solid #000000;
+        }
+
+        .btn-primary:hover {
+            background: #ffffff;
+            color: #000000;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .btn-secondary {
+            background: #ffffff;
+            color: #666666;
+            border: 2px solid #cccccc;
+        }
+
+        .btn-secondary:hover {
+            background: #f0f0f0;
+            color: #000000;
+            border-color: #000000;
+            transform: translateY(-2px);
+        }
+
+        .empty-state {
+            text-align: center;
+            padding: 60px 20px;
+            background: #f8f8f8;
+            border-radius: 20px;
+            border: 1px solid #e0e0e0;
+        }
+
+        .empty-state h3 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+            color: #000000;
+        }
+
+        .empty-state p {
+            color: #666666;
+            margin-bottom: 20px;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 15px;
+            }
+
+            .header h1 {
+                font-size: 2rem;
+            }
+
+            .order-header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .product-item {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 10px;
+            }
+
+            .product-image {
+                margin-right: 0;
+                margin-bottom: 10px;
+            }
+
+            .action-buttons {
+                flex-direction: column;
+            }
+
+            .btn {
+                width: 100%;
+            }
+        }

@@ -1,0 +1,146 @@
+{%extends 'base.html'%}
+{%load static%}
+{% block title %}About Us | Aurora Cadence{% endblock %}
+{% block content %}
+<link rel="stylesheet" href="{% static 'css/about.css' %}">
+
+<section class="hero-section">
+    <div class="container">
+        <div class="hero-content">
+            <h1 class="hero-title">Aurora Cadence</h1>
+            <p class="hero-subtitle">Where Luxury Meets Accessibility</p>
+        </div>
+    </div>
+</section>
+
+<!-- About Section -->
+<section class="about-section">
+    <div class="container">
+        <h2 class="section-title">About Us</h2>
+
+        <div class="container py-5">
+            <div class="row align-items-center">
+                <!-- Image Column -->
+                <div class="col-md-6 mb-4 mb-md-0 about-image">
+                    <img src="https://www.suryavanshi.net/categoryimage/20230620182042Gold%20Jewellery%20Banner.jpg"
+                        alt="Aurora Cadence Jewelry" class="img-fluid">
+                </div>
+
+                <!-- Text Column -->
+                <div class="col-md-6" style="text-align: justify;">
+                    <p class="mb-4">
+                        Aurora Cadence was born from a simple idea — that
+                        <span class="fw-semibold" style="color: #d4af37;">luxury jewelry should be beautiful, long-lasting, and
+                            affordable for all</span>.
+                    </p>
+                    <p class="mb-4">
+                        We design and curate elegant, anti-tarnish 18K gold-plated jewelry for those who want to express
+                        their individuality
+                        without compromising on quality or price. Our collections blend celebrity-inspired designs,
+                        Swarovski stones, and timeless
+                        craftsmanship to create pieces that stand out and stay brilliant over time.
+                    </p>
+                    <p class="mb-4">
+                        From everyday essentials to special occasion statements, Aurora Cadence is your go-to
+                        destination for jewelry that glows
+                        with confidence — just like you.
+                    </p>
+                    <p class="fw-bold">
+                        We're proud to make premium style accessible. Because when you look good, you feel unstoppable.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="features-grid">
+            <div class="feature-card">
+                <span class="feature-icon">✨</span>
+                <h3 class="feature-title">Luxury Look & Feel</h3>
+                <p class="feature-description">Premium quality that rivals fine jewelry without the premium price tag
+                </p>
+            </div>
+            <div class="feature-card">
+                <span class="feature-icon">🛡️</span>
+                <h3 class="feature-title">Anti-Tarnish Protection</h3>
+                <p class="feature-description">Special coating ensures lasting shine and brilliant appearance over time
+                </p>
+            </div>
+            <div class="feature-card">
+                <span class="feature-icon">💰</span>
+                <h3 class="feature-title">Affordable Elegance</h3>
+                <p class="feature-description">Beautiful jewelry that doesn't compromise on quality or break the bank
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Products Section -->
+<section class="products-section">
+    <div class="container">
+        <h2 class="section-title ">Our Products</h2>
+        <div class="products-intro">
+            <p>At Aurora Cadence, we are committed to offering jewelry that embodies luxury, longevity, and
+                affordability. Every piece is carefully crafted with premium materials and timeless style in mind.</p>
+        </div>
+
+        <div class="products-grid">
+            <div class="product-feature">
+                <span class="product-icon">💎</span>
+                <h3 class="product-title">18K Gold Plating</h3>
+                <p class="product-description">All our jewelry is plated with high-quality 18K gold, giving it a rich,
+                    luxurious finish while keeping it lightweight and affordable. It offers the look and feel of fine
+                    jewelry — without the high price tag.</p>
+            </div>
+
+            <div class="product-feature">
+                <span class="product-icon">🛡️</span>
+                <h3 class="product-title">Anti-Tarnish Technology</h3>
+                <p class="product-description">Our pieces are specially coated to resist tarnishing, so they retain
+                    their shine and beauty even with regular use. No more worrying about dullness or fading — just
+                    jewelry that lasts.</p>
+            </div>
+
+            <div class="product-feature">
+                <span class="product-icon">🌟</span>
+                <h3 class="product-title">Celebrity-Inspired Collections</h3>
+                <p class="product-description">Stay on trend with styles loved by your favorite celebrities. From
+                    minimal elegance to bold statements, our curated selections bring red carpet vibes to your everyday
+                    wear.</p>
+            </div>
+
+            <div class="product-feature">
+                <span class="product-icon">💠</span>
+                <h3 class="product-title">Swarovski Stone Collection</h3>
+                <p class="product-description">Add sparkle to your style with our Swarovski crystal jewelry —
+                    precision-cut stones that reflect light beautifully and give a premium shine to every piece.</p>
+            </div>
+
+            <div class="product-feature">
+                <span class="product-icon">💚</span>
+                <h3 class="product-title">Skin-Friendly & Hypoallergenic</h3>
+                <p class="product-description">All our products are nickel-free and lead-free, making them safe for all
+                    skin types. You can wear our jewelry confidently and comfortably, every day.</p>
+            </div>
+
+            <div class="product-feature">
+                <span class="product-icon">🎁</span>
+                <h3 class="product-title">Perfect for Gifting</h3>
+                <p class="product-description">Each piece comes beautifully packaged — ready to gift for birthdays,
+                    anniversaries, weddings, or any special moment.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CTA Section -->
+<section class="cta-section">
+    <div class="container">
+        <h2 class="cta-title">Ready to Shine?</h2>
+        <p class="cta-text">Discover our collections and find the perfect piece that speaks to your style</p>
+        <a href="{%url 'products'%}" class="cta-button">Shop Now</a>
+    </div>
+</section>
+
+{%endblock%}

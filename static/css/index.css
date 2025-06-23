@@ -1,0 +1,190 @@
+* body {
+
+    background-color: white;
+    color: black;
+    line-height: 1.6;
+}
+
+/* Hero Carousel */
+.hero-carousel {
+    height: 70vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.carousel-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.carousel-slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 1.5s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.carousel-slide.active {
+    opacity: 1;
+}
+
+.carousel-slide img,
+.carousel-slide video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.carousel-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* background: linear-gradient(45deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.3)); */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    color: white;
+}
+
+.carousel-content h1 {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    background: linear-gradient(0deg, #ffffff, #ffffff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.carousel-content p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+}
+
+.cta-button {
+    padding: 5px 30px;
+    background: linear-gradient(45deg, #DAA520, #FFD700);
+    color: white;
+    text-decoration: none;
+    border-radius: 30px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    transition: all 0.4s ease;
+    box-shadow: 0 4px 15px rgba(218, 165, 32, 0.3);
+}
+
+.cta-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(218, 165, 32, 0.5);
+}
+
+.carousel-indicators {
+    position: absolute;
+    bottom: 30px;
+    left: 35%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px;
+}
+
+.indicator {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.indicator.active {
+    background: #FFD700;
+    transform: scale(1.2);
+}
+
+
+/* product card  */
+.card{
+    overflow: hidden;
+    border-radius: 0px;
+}
+
+
+
+.card img{
+    height: 320px;
+    object-fit: cover;
+    border-radius: 0px;
+    transition: transform 0.6s ease-in-out;
+    
+}
+
+
+.card-title {
+    opacity: 0.9;
+    font-weight: 300;
+    font-size: 1rem;
+    font-family: 'Poppins', sans-serif;
+}
+@media (max-width: 768px) {
+    .card-title{
+        font-size: 0.7rem; 
+    }
+    .price {
+        font-size: 0.8rem; 
+    }
+}
+
+.head-text {
+    font-weight: 300; 
+    font-size: 2rem; 
+    opacity: 0.8;
+    letter-spacing: 5px; 
+    text-transform: uppercase;
+}
+
+
+
+.card img:hover {
+    transform: scale(1.09);
+    
+}
+@media (max-width: 768px) {
+    .card img {
+        height: 250px;
+    }
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .carousel-content h1 {
+        font-size: 2.5rem;
+    }
+
+    .carousel-content p {
+        font-size: 1.2rem;
+    }
+
+    .section-title {
+        font-size: 2rem;
+    }
+
+    .categories-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+

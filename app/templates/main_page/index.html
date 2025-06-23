@@ -1,0 +1,350 @@
+{%extends 'base.html'%}
+{% load static%}
+{% block title %}Home | Aurora Cadence{% endblock %}
+
+{%block content%}
+<link rel="stylesheet" href="{%static 'css/index.css'%}">
+
+<section class="hero-carousel">
+    <div class="carousel-container">
+
+        <div class="carousel-slide active">
+            <video autoplay muted loop>
+                <source src="{%static 'video/head-video.mp4'%}" type="video/mp4">
+            </video>
+            <div class="carousel-overlay">
+                <div class="carousel-content">
+                    <h1>Exquisite Jewelry Collection</h1>
+                    <p>Discover timeless elegance and craftsmanship</p>
+                    <a href="#categories" class="cta-button">Shop Now</a>
+                </div>
+            </div>
+        </div>
+        <div class="carousel-slide">
+            <img src="https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+                alt="Luxury Jewelry Collection">
+            <div class="carousel-overlay">
+                <div class="carousel-content">
+                    <h1>Handcrafted Excellence</h1>
+                    <p>Where tradition meets modern design</p>
+                    <a href="#categories" class="cta-button">View Collection</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="carousel-slide">
+            <img src="https://images.unsplash.com/photo-1506630448388-4e683c67ddb0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+                alt="Diamond Rings">
+            <div class="carousel-overlay">
+                <div class="carousel-content">
+                    <h1>Diamond Perfection</h1>
+                    <p>Sparkling diamonds for every occasion</p>
+                    <a href="#categories" class="cta-button">Explore Diamonds</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="carousel-indicators">
+        <div class="indicator active" onclick="currentSlide(1)"></div>
+        <div class="indicator" onclick="currentSlide(2)"></div>
+        <div class="indicator" onclick="currentSlide(3)"></div>
+    </div>
+</section>
+
+
+
+<!-- product section  -->
+
+<div class="container py-4">
+    <h2 class="head-text text-center fw-bold mb-5">New Arrivals</h2>
+    <div class="row justify-content-center">
+
+
+
+        <div class="col-6 col-sm-6 col-md-4 col-lg-3 mb-4">
+            <div class="card h-100 shadow-sm border-0">
+                <img src="https://plus.unsplash.com/premium_photo-1724762183134-c17cf5f5bed2?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8Z29sZCUyMGpld2VsbGVyeXxlbnwwfHwwfHx8MA%3D%3D"
+                    class="card-img-top" alt="Jewellery 3">
+                <div class="card-body">
+                    <h5 class="card-title mb-1">Silver Bracelet</h5>
+                    <p>
+                        <span class="price text-muted text-decoration-line-through">₹25,000</span>
+                        <span class="price text-danger fw-semibold">₹18,999</span>
+                    </p>
+                    <div class="text-end mt-4">
+                        <a href="" class="btn btn-warning"><i class="fas fa-cart-plus"></i>Cart</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-6 col-sm-6 col-md-4 col-lg-3 mb-4">
+            <div class="card h-100 shadow-sm border-0">
+                <img src="https://i.pinimg.com/736x/30/a4/c2/30a4c21d859e2d4f9e5f84d3badeda48.jpg" class="card-img-top" 
+                    alt="Jewellery 3">
+                <div class="card-body">
+                    <h5 class="card-title mb-1">Silver Bracelet</h5>
+                    <p>
+                        <span class="price text-muted text-decoration-line-through">₹25,000</span>
+                        <span class="price text-danger fw-semibold">₹18,999</span>
+                    </p>
+                    <div class="text-end mt-4">
+                        <a href="" class="btn btn-warning"><i class="fas fa-cart-plus"></i>Cart</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-6 col-sm-6 col-md-4 col-lg-3 mb-4">
+            <div class="card shadow-sm border-0">
+                <img src="https://media.istockphoto.com/id/1277517088/photo/fancy-designer-antique-golden-bracelets-for-woman-fashion.jpg?s=612x612&w=0&k=20&c=n49O0S5rIgzxJX5bU1YjwRHfou0DYPcmsv-N5JAAM14="
+                    class="card-img-top" alt="Jewellery ">
+                <div class="card-body ">
+                    <h5 class="card-title mb-1">Elegant Diamond Ring</h5>
+                    <p>
+                        <span class="price text-muted text-decoration-line-through">₹25,000</span>
+                        <span class="price text-danger fw-semibold">₹18,999</span>
+                    </p>
+                    <div class="text-end mt-4">
+                        <a href="" class="btn btn-warning"><i class="fas fa-cart-plus"></i>Cart</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-6 col-sm-6 col-md-4 col-lg-3 mb-4">
+            <div class="card h-100 shadow-sm border-0">
+                <img src="https://flyingbeads.in/wp-content/uploads/2023/07/20230718_160313-scaled.jpg"
+                    class="card-img-top" alt="Jewellery 2">
+                <div class="card-body ">
+                    <h5 class="card-title mb-1">Gold Pendant Set</h5>
+                    <p>
+                        <span class="price text-muted text-decoration-line-through">₹25,000</span>
+                        <span class="price text-danger fw-semibold">₹18,999</span>
+                    </p>
+                    <div class="text-end mt-4">
+                        <a href="" class="btn btn-warning"><i class="fas fa-cart-plus"></i>Cart</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-6 col-sm-6 col-md-4 col-lg-3 mb-4">
+            <div class="card h-100 shadow-sm border-0">
+                <img src="https://plus.unsplash.com/premium_photo-1724762183134-c17cf5f5bed2?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8Z29sZCUyMGpld2VsbGVyeXxlbnwwfHwwfHx8MA%3D%3D"
+                    class="card-img-top" alt="Jewellery 3">
+                <div class="card-body ">
+                    <h5 class="card-title mb-1">Silver Bracelet</h5>
+                    <p>
+                        <span class="price text-muted text-decoration-line-through">₹25,000</span>
+                        <span class="price text-danger fw-semibold">₹18,999</span>
+                    </p>
+                    <div class="text-end mt-4">
+                        <a href="" class="btn btn-warning"><i class="fas fa-cart-plus"></i>Cart</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-6 col-sm-6 col-md-4 col-lg-3 mb-4">
+            <div class="card h-100 shadow-sm border-0">
+                <img src="https://i.pinimg.com/736x/30/a4/c2/30a4c21d859e2d4f9e5f84d3badeda48.jpg" class="card-img-top"
+                    alt="Jewellery 3">
+                <div class="card-body ">
+                    <h5 class="card-title mb-1">Silver Bracelet</h5>
+                    <p>
+                        <span class="price text-muted text-decoration-line-through">₹25,000</span>
+                        <span class="price text-danger fw-semibold">₹18,999</span>
+                    </p>
+                    <div class="text-end mt-4">
+                        <a href="" class="btn btn-warning"><i class="fas fa-cart-plus"></i>Cart</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-6 col-sm-6 col-md-4 col-lg-3 mb-4">
+            <div class="card shadow-sm border-0">
+                <img src="https://media.istockphoto.com/id/1277517088/photo/fancy-designer-antique-golden-bracelets-for-woman-fashion.jpg?s=612x612&w=0&k=20&c=n49O0S5rIgzxJX5bU1YjwRHfou0DYPcmsv-N5JAAM14="
+                    class="card-img-top" alt="Jewellery ">
+                <div class="card-body ">
+                    <h5 class="card-title mb-1">Elegant Diamond Ring</h5>
+                    <p>
+                        <span class="price text-muted text-decoration-line-through">₹25,000</span>
+                        <span class="price text-danger fw-semibold">₹18,999</span>
+                    </p>
+                    <div class="text-end mt-4">
+                        <a href="" class="btn btn-warning"><i class="fas fa-cart-plus"></i>Cart</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-6 col-sm-6 col-md-4 col-lg-3 mb-4">
+            <div class="card h-100 shadow-sm border-0">
+                <img src="https://flyingbeads.in/wp-content/uploads/2023/07/20230718_160313-scaled.jpg"
+                    class="card-img-top" alt="Jewellery 2">
+                <div class="card-body">
+                    <h5 class="card-title mb-1">Gold Pendant Set</h5>
+                    <p>
+                        <span class="price text-muted text-decoration-line-through">₹25,000</span>
+                        <span class="price text-danger fw-semibold">₹18,999</span>
+                    </p>
+                    <div class="text-end mt-4">
+                        <a href="" class="btn btn-warning"><i class="fas fa-cart-plus"></i>Cart</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Add more cards here -->
+
+    </div>
+
+</div>
+
+<div class="container py-2">
+    <h2 class="head-text text-center fw-bold mb-5">Categories</h2>
+    <div class="row">
+        <div class="col-6 col-sm-6 col-md-4 col-lg-3 mb-4">
+            <div class="card h-100 shadow-sm border-0">
+                <img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcRySviT1pbmPfCiLpkYTd5SuM4t64fEuwiD9vvBufXZDQNsaWH5-QdJSLAfIMh7OYoGk_2W3v9CwNVfN_znEWHM_rHXqhwHWYSFPJ8JXbcZ"
+                    class="card-img-top" alt="Jewellery 2">
+                <div class="card-body ">
+                    <h5 class="card-title mb-1">
+                        18k Gold Plated <i class="fas fa-arrow-right ms-2"></i>
+                    </h5>
+
+                </div>
+            </div>
+        </div>
+        <div class="col-6 col-sm-6 col-md-4 col-lg-3 mb-4">
+            <div class="card h-100 shadow-sm border-0">
+                <img src="https://luxebook.in/wp-content/uploads/2023/12/Swarovski-Collection-I-Campaign-Shot-850x560.jpg"
+                    class="card-img-top" alt="Jewellery 2">
+                <div class="card-body ">
+                    <h5 class="card-title mb-1">Swarovski Collection<i class="fas fa-arrow-right ms-2"></i></h5>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="col-6 col-sm-6 col-md-4 col-lg-3 mb-4">
+            <div class="card h-100 shadow-sm border-0">
+                <img src="https://filmfare.wwmindia.com/thumb/content/2023/feb/kiaraadvaniandsidharthmalhotra41676621821.jpg?width=1200&height=900"
+                    class="card-img-top" alt="Jewellery 2">
+                <div class="card-body ">
+                    <h5 class="card-title mb-1">Celebrity Collection<i class="fas fa-arrow-right ms-2"></i></h5>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="col-6 col-sm-6 col-md-4 col-lg-3 mb-4">
+            <div class="card shadow-sm border-0">
+                <img src="https://kolhapurisaaj.in/cdn/shop/files/Traditional_Forming_Gold_Choker_Necklace_Set_with_Floral_Design_and_Dangling_Accents_3.jpg?v=1730805753"
+                    class="card-img-top" alt="Jewellery ">
+                <div class="card-body ">
+                    <h5 class="card-title mb-1">Necklace<i class="fas fa-arrow-right ms-2"></i></h5>
+
+
+                </div>
+            </div>
+        </div>
+
+        <div class="col-6 col-sm-6 col-md-4 col-lg-3 mb-4">
+            <div class="card h-100 shadow-sm border-0">
+                <img src="https://priyaasi.com/cdn/shop/products/BA-PR-40126-2-4_1.jpg?v=1716880480"
+                    class="card-img-top" alt="Jewellery 2">
+                <div class="card-body">
+                    <h5 class="card-title mb-1">Bangles<i class="fas fa-arrow-right ms-2"></i></h5>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="col-6 col-sm-6 col-md-4 col-lg-3 mb-4">
+            <div class="card h-100 shadow-sm border-0">
+                <img src="https://assets.ajio.com/medias/sys_master/root/20240129/KgT7/65b6c7de16fd2c6e6ac51014/-473Wx593H-467015089-multi-MODEL.jpg"
+                    class="card-img-top" alt="Jewellery 3">
+                <div class="card-body">
+                    <h5 class="card-title mb-1">Bracelets<i class="fas fa-arrow-right ms-2"></i></h5>
+
+                </div>
+            </div>
+        </div>
+        <div class="col-6 col-sm-6 col-md-4 col-lg-3 mb-4">
+            <div class="card h-100 shadow-sm border-0">
+                <img src="https://www.jiomart.com/images/product/original/rvhc0zbkeu/arch-fashion-traditional-gold-platted-wedding-jumkhi-earrings-collection-erg2063-product-images-orvhc0zbkeu-p602556161-0-202306231317.jpg?im=Resize=(420,420)"
+                    class="card-img-top" alt="Jewellery 3">
+                <div class="card-body">
+                    <h5 class="card-title mb-1">Earrings<i class="fas fa-arrow-right ms-2"></i></h5>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="col-6 col-sm-6 col-md-4 col-lg-3 mb-4">
+            <div class="card shadow-sm border-0">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVGCR-N-kPN8ncxnn_Jcv4UFrzGWh1h8MYwA&s"
+                    class="card-img-top" alt="Jewellery ">
+                <div class="card-body ">
+                    <h5 class="card-title mb-1">Anklets<i class="fas fa-arrow-right ms-2"></i></h5>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="col-6 col-sm-6 col-md-4 col-lg-3 mb-4">
+            <div class="card h-100 shadow-sm border-0">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNa6EwBpjwx6VXeNZZ0DUI_ePTJBsGn9pclg&s"
+                    class="card-img-top" alt="Jewellery 2">
+                <div class="card-body ">
+                    <h5 class="card-title mb-1">Rings<i class="fas fa-arrow-right ms-2"></i></h5>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+</div>
+
+
+<script>
+    let currentSlideIndex = 0;
+    const slides = document.querySelectorAll('.carousel-slide');
+    const indicators = document.querySelectorAll('.indicator');
+
+    function showSlide(n) {
+        slides[currentSlideIndex].classList.remove('active');
+        indicators[currentSlideIndex].classList.remove('active');
+
+        currentSlideIndex = (n + slides.length) % slides.length;
+
+        slides[currentSlideIndex].classList.add('active');
+        indicators[currentSlideIndex].classList.add('active');
+    }
+
+    function currentSlide(n) {
+        showSlide(n - 1);
+    }
+
+    function nextSlide() {
+        showSlide(currentSlideIndex + 1);
+    }
+
+    // Auto-advance carousel
+    setInterval(nextSlide, 10000);
+
+    // Smooth scrolling for CTA buttons
+    document.querySelectorAll('a[href="#categories"]').forEach(link => {
+        link.addEventListener('click', function (e) {
+            e.preventDefault();
+            document.getElementById('categories').scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
+    });
+</script>
+
+{%endblock%}
