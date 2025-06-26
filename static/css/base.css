@@ -5,7 +5,6 @@
 }
 
 .ecom-navbar-links .nav-link {
-    font-family: 'Oswald', sans-serif;
     font-weight: 100;
     font-size: 1rem;
     color: #ffffff;
@@ -17,8 +16,10 @@
 }
 
 .dropdown-menu .dropdown-item:hover {
-    background-color: #ffffff !important;  /* black background */
-    color: #c58f3d !important;             /* white text */
+    background-color: #ffffff !important;
+    /* black background */
+    color: #c58f3d !important;
+    /* white text */
 }
 
 
@@ -30,9 +31,11 @@
 
 /* footer  */
 body {
-    font-family: 'Oswald', sans-serif;
+    /* font-family: 'Oswald', sans-serif; */
     letter-spacing: 2px;
-    
+    font-family: Arial, Helvetica, sans-serif;
+
+
 }
 
 

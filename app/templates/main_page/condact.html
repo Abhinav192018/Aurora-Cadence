@@ -1,0 +1,71 @@
+{%extends 'base.html'%}
+{%load static%}
+{% block title %}Contact | Aurora Cadence{% endblock %}
+{% block content %}
+<link rel="stylesheet" href="{%static 'css/contact.css'%}">
+
+<section>
+    <div class="head-img">
+        <img src="https://static.vecteezy.com/system/resources/previews/022/899/921/large_2x/jewelry-gold-ring-with-precious-stones-ai-generated-free-photo.jpg"
+            alt="Aurora Cadence gallery" class="img-fluid">
+    </div>
+    <div class="overlay">
+        <h1 class="text-white mt-5">Contact</h1>
+        <p class="text-white">Explore our exquisite collection of jewelry</p>
+    </div>
+</section>
+
+
+
+<section class="enquiry-section py-5" style="background-color: rgb(206, 206, 206);">
+    <div class="container">
+        <div class="row align-items-start">
+
+
+            <!-- Contact Details -->
+            <div class="col-md-12 w-75 mx-auto">
+                <h2 class="mb-4 border-bottom p-2">Contact Information</h2>
+                <div class="card shadow-sm mb-3 border-0">
+                    <div class="card-body d-flex align-items-center">
+                        <i class="bi bi-telephone-fill fs-4 text-dark me-3"></i>
+                        <div>
+                            <h6 class="mb-0">Phone</h6>
+                            <small><a href="tel:+91 9747878317" class="text-decoration-none text-black">+91
+                                    9747878317</a></small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card shadow-sm mb-3 border-0">
+                    <div class="card-body d-flex align-items-center">
+                        <i class="bi bi-geo-alt-fill fs-4 text-dark me-3"></i>
+                        <div>
+                            <h6 class="mb-0">Address</h6>
+                            <small>Sukriti, Chackai, Thiruvananthapuram,695024</small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card shadow-sm mb-3 border-0">
+                    <div class="card-body d-flex align-items-center">
+                        <i class="bi bi-clock-fill fs-4 text-dark me-3"></i>
+                        <div>
+                            <h6 class="mb-0">Working Hours</h6>
+                            <small>Mon-Fri: 9:00 AM – 6:00 PM<br>Sat: 10:00 AM – 4:00 PM</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Google Map Section -->
+<section class="map-section">
+    <div class="container-fluid px-0">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3746.9857741307715!2d76.61294877477872!3d8.876394391179002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b05fd577abff66d%3A0x2a9eddb94d7958e3!2sAurora%20Cadence!5e1!3m2!1sen!2sin!4v1750750739913!5m2!1sen!2sin"
+            width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+</section>
+{%endblock%}

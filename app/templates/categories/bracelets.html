@@ -1,13 +1,13 @@
 {%extends 'base.html'%}
 {%load static%}
-{% block title %}Products | Aurora Cadence{% endblock %}
+{% block title %}18k Gold Plated | Aurora Cadence{% endblock %}
+{% block content %}
+<link rel="stylesheet" href="{%static 'css/index.css'%}">
 
-{%block content%}
-<link rel="stylesheet" href="{% static 'css/index.css' %}">
 
 
 <div class="container py-4">
-    <h2 class="head-text text-start fw-bold my-5 pt-5">Browse All Designs</h2>
+    <h2 class="head-text text-start fw-bold my-5 pt-5">Bracelets</h2>
     <div class="row justify-content-center">
 
         <div class="container-fluid mb-4">
@@ -33,22 +33,6 @@
 
                             <option value="yes">Yes</option>
                             <option value="no">No</option>
-                        </select>
-                    </div>
-
-                    <div class="mb-3">
-                        <label class="form-label fw-bold">Categories</label>
-                        <select class="form-select" id="categorie">
-                            <option value="18k-gold-plated">18k Gold Plated</option>
-                            <option value="swarovski-collection">Swarovski Collection</option>
-                            <option value="celebrity-collection">Celebrity Collection</option>
-                            <option value="necklace">Necklace</option>
-                            <option value="bangles">Bangles</option>
-                            <option value="bracelets">Bracelets</option>
-                            <option value="earrings">Earrings</option>
-                            <option value="anklets">Anklets</option>
-                            <option value="rings">Rings</option>
-
                         </select>
                     </div>
 
@@ -250,7 +234,4 @@
     </div>
 
 </div>
-
-
-
 {%endblock%}

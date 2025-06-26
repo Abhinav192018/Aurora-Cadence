@@ -36,22 +36,19 @@
 </head>
 
 <body>
-
-
     <nav class="navbar navbar-expand-lg navbar-dark bg-black fixed-top ecom-navbar position-fixed">
         <div class="container-fluid ecom-navbar-container">
 
-            <!-- 🔁 Mobile Row: Logo + Cart + Hamburger (visible on small screens only) -->
             <div class="d-flex d-lg-none justify-content-between align-items-center w-100">
                 <!-- Logo -->
-                <a class="navbar-brand ecom-navbar-brand" href="#">
+                <a class="navbar-brand ecom-navbar-brand" href="{%url 'home'%}">
                     <img src="{%static 'images/logo.png'%}" alt="Logo" class="ecom-navbar-logo" height="50">
                 </a>
 
                 <!-- Cart + Hamburger -->
                 <div class="d-flex align-items-center">
                     <!-- 🛒 Cart Icon (Mobile View) with Badge -->
-                    <a href="#" class="text-white fs-5 me-3 position-relative">
+                    <a href="{%url 'cart'%}" class="text-white fs-5 me-3 position-relative">
                         <i class="fas fa-shopping-cart"></i>
                         <span
                             class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger text-white px-2 py-1"
@@ -70,7 +67,7 @@
             </div>
 
             <!-- 🖥️ Desktop View -->
-            <a class="navbar-brand ecom-navbar-brand d-none d-lg-block" href="#">
+            <a class="navbar-brand ecom-navbar-brand d-none d-lg-block" href="{%url 'home'%}">
                 <img src="{%static 'images/logo.png'%}" alt="Logo" class="ecom-navbar-logo" style="margin-left: 101px;"
                     height="50">
             </a>
@@ -92,23 +89,23 @@
                             Categories
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="categoryDropdown">
-                            <li><a class="dropdown-item text-black" href="#"><i class="fas fa-coins me-2"></i>18k Gold
+                            <li><a class="dropdown-item text-black" href="{%url 'gold_plated'%}"><i class="fas fa-coins me-2"></i>18k Gold
                                     Plated</a></li>
-                            <li><a class="dropdown-item text-black" href="#"><i class="fas fa-star me-2"></i>Swarovski
-                                    Collection</a></li>
-                            <li><a class="dropdown-item text-black" href="#"><i
+                            <li><a class="dropdown-item text-black" href="{%url 'swarovski'%}"><i class="fas fa-star me-2"></i>Swarovski
+                                    </a></li>
+                            <li><a class="dropdown-item text-black" href="{%url 'celebrity'%}"><i
                                         class="fas fa-user-astronaut me-2"></i>Celebrity Collection</a></li>
-                            <li><a class="dropdown-item text-black" href="#"><i
+                            <li><a class="dropdown-item text-black" href="{%url 'necklace'%}"><i
                                         class="fas fa-heart me-2"></i>Necklace</a></li>
-                            <li><a class="dropdown-item text-black" href="#"><i
+                            <li><a class="dropdown-item text-black" href="{%url 'bangles'%}"><i
                                         class="fas fa-circle-notch me-2"></i>Bangles</a></li>
-                            <li><a class="dropdown-item text-black" href="#"><i
+                            <li><a class="dropdown-item text-black" href="{%url 'bracelets'%}"><i
                                         class="fas fa-link me-2"></i>Bracelets</a></li>
-                            <li><a class="dropdown-item text-black" href="#"><i
+                            <li><a class="dropdown-item text-black" href="{%url 'earrings'%}"><i
                                         class="fas fa-ear-listen me-2"></i>Earrings</a></li>
-                            <li><a class="dropdown-item text-black" href="#"><i
+                            <li><a class="dropdown-item text-black" href="{%url 'anklets'%}"><i
                                         class="fas fa-shoe-prints me-2"></i>Anklets</a></li>
-                            <li><a class="dropdown-item text-black" href="#"><i class="fas fa-ring me-2"></i>Rings</a>
+                            <li><a class="dropdown-item text-black" href="{%url 'rings'%}"><i class="fas fa-ring me-2"></i>Rings</a>
                             </li>
                         </ul>
                     </li>
@@ -123,13 +120,13 @@
                         <a class="nav-link" href="{%url 'gallery'%}">Gallery</a>
                     </li>
                     <li class="nav-item me-5">
-                        <a class="nav-link" href="#">Contact</a>
+                        <a class="nav-link" href="{%url 'contact'%}">Contact</a>
                     </li>
 
 
                     <!-- 🛒 Cart Icon (Desktop View) with Badge -->
                     <li class="nav-item d-none d-lg-block ms-3 position-relative">
-                        <a class="nav-link fs-5 position-relative" href="#">
+                        <a class="nav-link fs-5 position-relative" href="{%url 'cart'%}">
                             <i class="fas fa-shopping-cart"></i>
                             <span
                                 class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger text-white px-2 py-1"
@@ -160,10 +157,10 @@
     <!-- call button -->
     <div class="floating-buttons">
 
-        <a href="https://wa.me/918075918884" target="_blank" class="floating-button whatsapp-button">
+        <a href="https://wa.me/919747878317" target="_blank" class="floating-button whatsapp-button">
             <i class="fab fa-whatsapp"></i>
         </a>
-        <a href="tel:+918075918884" class="floating-button call-button">
+        <a href="tel:+919747878317" class="floating-button call-button">
             <i class="fas fa-phone"></i>
         </a>
 

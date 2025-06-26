@@ -1,0 +1,146 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Details | Aurora Cadence{% endblock %}
+
+{% block content %}
+<link rel="stylesheet" href="{% static 'css/product_details.css' %}">
+
+<div class="container my-5">
+        <!-- Product Detail Section -->
+        <div class="row g-5 align-items-center" style="margin-top: 100px;">
+            <div class="col-md-6">
+                <div class="product-image-wrapper">
+                    <img src="https://i.pinimg.com/736x/fd/93/20/fd93207d90d6df6f6457f0f6ef9f77e3.jpg"
+                        alt="Crystal Solitaire Ring" class="product-image">
+                </div>
+            </div>
+            <div class="col-md-6">
+                <span class="product-type">Premium Collection</span>
+                <h1 class="product-title">Crystal Solitaire Ring</h1>
+                
+                <div class="category-info mb-3">Category: <span class="fw-semibold">Engagement Ring</span></div>
+                <h2 class="price mb-4">₹2,500</h2>
+
+                <p class="product-desc mb-4">
+                    Add a touch of timeless elegance to your collection with this exquisite 18K gold plated crystal solitaire ring.
+                    Designed to dazzle, the centerpiece features a precision-cut Swarovski-inspired stone that reflects
+                    light beautifully from every angle. Perfect for engagements, anniversaries, or as a statement piece
+                    that captures hearts and turns heads.
+                </p>
+
+                <div class="mb-4">
+                    <h6 class="gold-accent fw-bold mb-2">Features:</h6>
+                    <ul class="list-unstyled">
+                        <li><i class="fas fa-check-circle text-success me-2"></i>18K Gold Plated</li>
+                        <li><i class="fas fa-check-circle text-success me-2"></i>Precision-Cut Crystal</li>
+                        <li><i class="fas fa-check-circle text-success me-2"></i>Tarnish Resistant</li>
+                        <li><i class="fas fa-check-circle text-success me-2"></i>Hypoallergenic</li>
+                    </ul>
+                </div>
+
+                <button class="btn btn-add-cart btn-lg">
+                    <span><i class="fas fa-shopping-cart me-2"></i>Add to Cart</span>
+                </button>
+            </div>
+        </div>
+
+        <!-- Related Products Section -->
+        <div class="mt-5 pt-5">
+            <h3 class="section-title">Related Products</h3>
+            <div class="row row-cols-2 row-cols-md-4 g-4">
+                <div class="col">
+                    <div class="related-product h-100">
+                        <img src="https://jewelemarket.com/cdn/shop/files/bridalcombo31green.jpg?v=1721033555"
+                            alt="Emerald Bridal Set">
+                        <div class="related-info">
+                            <div class="related-title">Emerald Bridal Set</div>
+                            <div class="related-price">₹25,000</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="related-product h-100">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTL42bYpIkp-ibgVtOZMgLJ_jBXaF6GBeqlOg&s"
+                            alt="Diamond Solitaire">
+                        <div class="related-info">
+                            <div class="related-title">Diamond Solitaire</div>
+                            <div class="related-price">₹35,000</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="related-product h-100">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAJUxkFP7iHGYNzN2oAoKN6S_4II8L2iR9y_Bx6AA9NVZpyGgTqVLXFdYBMH-uCvHcfYc&usqp=CAU"
+                            alt="Vintage Gold Band">
+                        <div class="related-info">
+                            <div class="related-title">Vintage Gold Band</div>
+                            <div class="related-price">₹18,500</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="related-product h-100">
+                        <img src="https://jewelemarket.com/cdn/shop/files/bridalcombo31green.jpg?v=1721033555"
+                            alt="Green Stone Ring">
+                        <div class="related-info">
+                            <div class="related-title">Green Stone Ring</div>
+                            <div class="related-price">₹22,000</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="related-product h-100">
+                        <img src="https://i.pinimg.com/736x/2e/6a/d3/2e6ad32634efe89d9c520b8903738bc8.jpg"
+                            alt="Rose Gold Ring">
+                        <div class="related-info">
+                            <div class="related-title">Rose Gold Ring</div>
+                            <div class="related-price">₹28,500</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="related-product h-100">
+                        <img src="https://i.pinimg.com/736x/fd/93/20/fd93207d90d6df6f6457f0f6ef9f77e3.jpg"
+                            alt="Crystal Elegance">
+                        <div class="related-info">
+                            <div class="related-title">Crystal Elegance</div>
+                            <div class="related-price">₹15,000</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="related-product h-100">
+                        <img src="https://jewelemarket.com/cdn/shop/files/bridalcombo31green.jpg?v=1721033555"
+                            alt="Bridal Collection">
+                        <div class="related-info">
+                            <div class="related-title">Bridal Collection</div>
+                            <div class="related-price">₹45,000</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="related-product h-100">
+                        <img src="https://i.pinimg.com/736x/2e/6a/d3/2e6ad32634efe89d9c520b8903738bc8.jpg"
+                            alt="Luxury Band">
+                        <div class="related-info">
+                            <div class="related-title">Luxury Band</div>
+                            <div class="related-price">₹32,000</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+{% endblock %}

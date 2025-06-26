@@ -74,7 +74,7 @@
 }
 
 .cta-button {
-    padding: 5px 30px;
+    padding: 10px 30px;
     background: linear-gradient(45deg, #DAA520, #FFD700);
     color: white;
     text-decoration: none;
@@ -135,7 +135,7 @@
     opacity: 0.9;
     font-weight: 300;
     font-size: 1rem;
-    font-family: 'Poppins', sans-serif;
+    
 }
 @media (max-width: 768px) {
     .card-title{

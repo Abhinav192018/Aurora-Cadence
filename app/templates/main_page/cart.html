@@ -1,0 +1,403 @@
+{%extends 'base.html'%}
+{%load static%}
+{% block title %}My cart | Aurora Cadence{% endblock %}
+
+{%block content%}
+<link rel="stylesheet" href="{%static 'css/cart.css'%}">
+
+
+<div class="cart-container mt-5">
+    <div class="container-fluid px-3 px-md-4 mt-5">
+
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <!-- Products Section -->
+            <div class="products-section fade-in">
+                <div class="d-flex justify-content-between align-items-center mb-4">
+                    <h3 class="m-0">
+                        <i class="fa-solid fa-cart-shopping text-warning"></i>
+                        Cart Items
+                    </h3>
+                    <span class="badge bg-dark rounded-pill px-3 py-2">3 Items</span>
+                </div>
+
+                <!-- Product 1 -->
+                <div class="product-card">
+
+                    <button class="remove-btn">
+                        <i class="fas fa-trash"></i>
+                    </button>
+
+                    <div class="row align-items-center">
+                        <div class="col-12 col-sm-3 col-md-2 text-center mb-3 mb-sm-0">
+                            <img src="https://www.rizanjewellery.com/assets/images/shop_by_categories/Rizan_sp2019958912.webp"
+                                class="product-image" alt="Samsung Galaxy M11">
+                        </div>
+                        <div class="col-12 col-sm-9 col-md-10">
+                            <div class="row">
+                                <div class="col-12 col-md-6">
+                                    <h5 class="product-title">Product name</h5>
+
+                                    <p class="product-price">₹799</p>
+                                </div>
+                                <div class="col-12 col-md-6">
+                                    <div class="quantity-controls">
+                                        <span class="me-2 fw-bold">Qty:</span>
+                                        <button class="quantity-btn" onclick="changeQuantity(this, -1)">-</button>
+                                        <input type="number" class="quantity-input" value="1" min="1"
+                                            onchange="updateTotal()">
+                                        <button class="quantity-btn" onclick="changeQuantity(this, 1)">+</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="product-card">
+                    <button class="remove-btn">
+                        <i class="fas fa-trash"></i>
+                    </button>
+
+                    <div class="row align-items-center">
+                        <div class="col-12 col-sm-3 col-md-2 text-center mb-3 mb-sm-0">
+                            <img src="https://i.pinimg.com/736x/72/da/3c/72da3c33dd6f10a501718268b607af16.jpg"
+                                class="product-image" alt="Bose Headphones">
+                        </div>
+                        <div class="col-12 col-sm-9 col-md-10">
+                            <div class="row">
+                                <div class="col-12 col-md-6">
+                                    <h5 class="product-title">Product Name</h5>
+
+                                    <p class="product-price">₹239</p>
+                                </div>
+                                <div class="col-12 col-md-6">
+                                    <div class="quantity-controls">
+                                        <span class="me-2 fw-bold">Qty:</span>
+                                        <button class="quantity-btn" onclick="changeQuantity(this, -1)">-</button>
+                                        <input type="number" class="quantity-input" value="1" min="1"
+                                            onchange="updateTotal()">
+                                        <button class="quantity-btn" onclick="changeQuantity(this, 1)">+</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 3 -->
+                <div class="product-card">
+                    <button class="remove-btn">
+                        <i class="fas fa-trash"></i>
+                    </button>
+
+                    <div class="row align-items-center">
+                        <div class="col-12 col-sm-3 col-md-2 text-center mb-3 mb-sm-0">
+                            <img src="https://static.vecteezy.com/system/resources/previews/022/899/921/large_2x/jewelry-gold-ring-with-precious-stones-ai-generated-free-photo.jpg"
+                                class="product-image" alt="iPad">
+                        </div>
+                        <div class="col-12 col-sm-9 col-md-10">
+                            <div class="row">
+                                <div class="col-12 col-md-6">
+                                    <h5 class="product-title">Product Name</h5>
+
+                                    <p class="product-price">₹659</p>
+                                </div>
+                                <div class="col-12 col-md-6">
+                                    <div class="quantity-controls">
+                                        <span class="me-2 fw-bold">Qty:</span>
+                                        <button class="quantity-btn" onclick="changeQuantity(this, -1)">-</button>
+                                        <input type="number" class="quantity-input" value="1" min="1"
+                                            onchange="updateTotal()">
+                                        <button class="quantity-btn" onclick="changeQuantity(this, 1)">+</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Cart Summary -->
+            <div class="cart-summary fade-in">
+                <h3 class="summary-title">
+                    <i class="fas fa-receipt me-2 text-warning"></i>
+                    Order Summary
+                </h3>
+
+                <div class="summary-row">
+                    <span>Subtotal (4 items)</span>
+                    <span class="fw-bold">₹2,356</span>
+                </div>
+
+                <div class="summary-row">
+                    <span>Shipping</span>
+                    <span class="text-success fw-bold">Free</span>
+                </div>
+
+
+
+                <div class="summary-row text-success">
+                    <span><i class="fas fa-tag me-2"></i>Discount</span>
+                    <span class="fw-bold">-₹95</span>
+                </div>
+
+                <div class="summary-total">
+                    <div class="summary-row">
+                        <span>Total Amount</span>
+                        <span>₹2,450</span>
+                    </div>
+                </div>
+
+
+
+                <!-- Buttons -->
+                <button class="address-btn" data-bs-toggle="modal" data-bs-target="#addressModal">
+                    <i class="fas fa-map-marker-alt me-2"></i>
+                    Add Delivery Address
+                </button>
+
+
+
+                <!-- Security Info -->
+                <div class="text-center mt-3">
+                    <small class="text-muted">
+                        <i class="fas fa-shield-alt me-1"></i>
+                        Your payment information is secure
+                    </small>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Address Modal -->
+<div class="modal fade" id="addressModal" tabindex="-1" aria-labelledby="addressModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="addressModalLabel">
+                    <i class="fas fa-map-marker-alt me-2"></i>Delivery Address
+                </h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form id="addressForm">
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label class="form-label" for="fullName">
+                                <i class="fas fa-user"></i>Full Name
+                            </label>
+                            <input type="text" id="fullName" class="form-control" required>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label class="form-label" for="phone">
+                                <i class="fas fa-phone"></i>Phone Number
+                            </label>
+                            <input type="tel" id="phone" class="form-control" required>
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label" for="email">
+                            <i class="fas fa-envelope"></i>Email (Optional)
+                        </label>
+                        <input type="email" id="email" class="form-control">
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label" for="addressLine1">
+                            <i class="fas fa-location-dot"></i>Address Line 1
+                        </label>
+                        <input type="text" id="addressLine1" class="form-control" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label" for="addressLine2">
+                            <i class="fas fa-home"></i>Address Line 2 (Optional)
+                        </label>
+                        <input type="text" id="addressLine2" class="form-control">
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label class="form-label" for="city">
+                                <i class="fas fa-city"></i>City
+                            </label>
+                            <input type="text" id="city" class="form-control" required>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label class="form-label" for="pincode">
+                                <i class="fas fa-map-pin"></i>Pin Code
+                            </label>
+                            <input type="text" id="pincode" class="form-control" required>
+                        </div>
+                    </div>
+
+                    <div class="mb-4">
+                        <label class="form-label" for="state">
+                            <i class="fas fa-flag"></i>State
+                        </label>
+                        <input type="text" id="state" class="form-control" required>
+                    </div>
+
+                    <div class="d-grid gap-2">
+                        <button class="checkout-btn">
+                            <i class="fas fa-lock me-2"></i>
+                            Secure Checkout
+                        </button>
+                        <button type="button" class="btn btn-outline-secondary btn-lg" data-bs-dismiss="modal">
+                            <i class="fas fa-times me-2"></i>Cancel
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    // Quantity controls
+    function changeQuantity(button, change) {
+        const input = button.parentElement.querySelector('.quantity-input');
+        const currentValue = parseInt(input.value);
+        const newValue = Math.max(1, currentValue + change);
+        input.value = newValue;
+        updateTotal();
+    }
+
+
+    // Update total (placeholder function)
+    function updateTotal() {
+        // Calculate total based on quantities
+        let total = 0;
+        const quantityInputs = document.querySelectorAll('.quantity-input');
+        const prices = [799, 239, 659];
+
+        quantityInputs.forEach((input, index) => {
+            total += parseInt(input.value) * prices[index];
+        });
+
+        // Update display (this is a simplified version)
+        console.log('Total updated:', total);
+    }
+
+    // Update item count
+    function updateItemCount() {
+        const itemCount = document.querySelectorAll('.product-card').length;
+        const badge = document.querySelector('.badge');
+        if (badge) {
+            badge.textContent = `${itemCount} Items`;
+        }
+    }
+
+
+
+    // Smooth scroll and animations
+    window.addEventListener('load', function () {
+        // Animate product cards on load
+        const productCards = document.querySelectorAll('.product-card');
+        productCards.forEach((card, index) => {
+            card.style.opacity = '0';
+            card.style.transform = 'translateY(30px)';
+
+            setTimeout(() => {
+                card.style.transition = 'all 0.6s cubic-bezier(0.4, 0, 0.2, 1)';
+                card.style.opacity = '1';
+                card.style.transform = 'translateY(0)';
+            }, index * 150);
+        });
+    });
+
+    // Add input validation
+    document.querySelectorAll('.quantity-input').forEach(input => {
+        input.addEventListener('change', function () {
+            if (this.value < 1) {
+                this.value = 1;
+            }
+            updateTotal();
+        });
+
+        input.addEventListener('blur', function () {
+            if (this.value === '' || this.value < 1) {
+                this.value = 1;
+                updateTotal();
+            }
+        });
+    });
+
+    // Add loading states for checkout button
+    document.querySelector('.checkout-btn').addEventListener('click', function () {
+        const originalText = this.innerHTML;
+        this.innerHTML = '<i class="fas fa-spinner fa-spin me-2"></i>Processing...';
+        this.disabled = true;
+
+        // Simulate processing time
+        setTimeout(() => {
+            this.innerHTML = originalText;
+            this.disabled = false;
+            // Redirect to checkout or show success message
+            alert('Redirecting to secure checkout...');
+        }, 2000);
+    });
+
+    // Add hover effects for better UX
+    document.querySelectorAll('.product-card').forEach(card => {
+        card.addEventListener('mouseenter', function () {
+            this.style.borderColor = 'var(--gold)';
+        });
+
+        card.addEventListener('mouseleave', function () {
+            this.style.borderColor = '';
+        });
+    });
+
+    // Mobile responsive enhancements
+    function handleMobileLayout() {
+        const isMobile = window.innerWidth <= 768;
+        const productCards = document.querySelectorAll('.product-card');
+
+        productCards.forEach(card => {
+            if (isMobile) {
+                card.classList.add('mobile-layout');
+            } else {
+                card.classList.remove('mobile-layout');
+            }
+        });
+    }
+
+    // Call on load and resize
+    window.addEventListener('load', handleMobileLayout);
+    window.addEventListener('resize', handleMobileLayout);
+
+    // Add touch feedback for mobile
+    if ('ontouchstart' in window) {
+        document.querySelectorAll('.quantity-btn, .remove-btn, .checkout-btn, .address-btn').forEach(btn => {
+            btn.addEventListener('touchstart', function () {
+                this.style.transform = 'scale(0.95)';
+            });
+
+            btn.addEventListener('touchend', function () {
+                this.style.transform = '';
+            });
+        });
+    }
+
+    // Keyboard navigation support
+    document.addEventListener('keydown', function (e) {
+        if (e.key === 'Escape') {
+            const modal = document.querySelector('.modal.show');
+            if (modal) {
+                bootstrap.Modal.getInstance(modal).hide();
+            }
+        }
+    });
+
+</script>
+
+
+
+
+{%endblock%}
