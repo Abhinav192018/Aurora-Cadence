@@ -12,6 +12,7 @@
     overflow: hidden;
 }
 
+
 .carousel-container {
     position: relative;
     width: 100%;
@@ -170,11 +171,11 @@
 /* Responsive Design */
 @media (max-width: 768px) {
     .carousel-content h1 {
-        font-size: 2.5rem;
+        font-size: 2rem;
     }
 
     .carousel-content p {
-        font-size: 1.2rem;
+        font-size: 1rem;
     }
 
     .section-title {
