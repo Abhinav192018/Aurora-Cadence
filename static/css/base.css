@@ -37,6 +37,18 @@ body {
 
 
 }
+/* .icon-img {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+    margin-right: 8px;
+} */
+ .dropdown-item img {
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+    margin-right: 8px;}
+
 
 
 .footer {

@@ -89,26 +89,63 @@
                             Categories
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="categoryDropdown">
-                            <li><a class="dropdown-item text-black" href="{%url 'gold_plated'%}"><i class="fas fa-coins me-2"></i>18k Gold
-                                    Plated</a></li>
-                            <li><a class="dropdown-item text-black" href="{%url 'swarovski'%}"><i class="fas fa-star me-2"></i>Swarovski
-                                    </a></li>
-                            <li><a class="dropdown-item text-black" href="{%url 'celebrity'%}"><i
-                                        class="fas fa-user-astronaut me-2"></i>Celebrity Collection</a></li>
-                            <li><a class="dropdown-item text-black" href="{%url 'necklace'%}"><i
-                                        class="fas fa-heart me-2"></i>Necklace</a></li>
-                            <li><a class="dropdown-item text-black" href="{%url 'bangles'%}"><i
-                                        class="fas fa-circle-notch me-2"></i>Bangles</a></li>
-                            <li><a class="dropdown-item text-black" href="{%url 'bracelets'%}"><i
-                                        class="fas fa-link me-2"></i>Bracelets</a></li>
-                            <li><a class="dropdown-item text-black" href="{%url 'earrings'%}"><i
-                                        class="fas fa-ear-listen me-2"></i>Earrings</a></li>
-                            <li><a class="dropdown-item text-black" href="{%url 'anklets'%}"><i
-                                        class="fas fa-shoe-prints me-2"></i>Anklets</a></li>
-                            <li><a class="dropdown-item text-black" href="{%url 'rings'%}"><i class="fas fa-ring me-2"></i>Rings</a>
+                            <li>
+                                <a class="dropdown-item text-black" href="{% url 'gold_plated' %}">
+                                    <img src="https://plus.unsplash.com/premium_photo-1724762183134-c17cf5f5bed2?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8Z29sZCUyMGpld2VsbGVyeXxlbnwwfHwwfHx8MA%3D%3D" class="me-2" 
+                                        alt="Gold">18k Gold Plated
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item text-black" href="{% url 'swarovski' %}">
+                                    <img src="https://luxebook.in/wp-content/uploads/2023/12/Swarovski-Collection-I-Campaign-Shot-850x560.jpg" class="me-2"
+                                        alt="Swarovski">Swarovski
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item text-black" href="{% url 'celebrity' %}">
+                                    <img src="https://filmfare.wwmindia.com/thumb/content/2023/feb/kiaraadvaniandsidharthmalhotra41676621821.jpg?width=1200&height=900" class="me-2"
+                                        alt="Celebrity">Celebrity Collection
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item text-black" href="{% url 'necklace' %}">
+                                    <img src="https://kolhapurisaaj.in/cdn/shop/files/Traditional_Forming_Gold_Choker_Necklace_Set_with_Floral_Design_and_Dangling_Accents_3.jpg?v=1730805753" class="me-2"
+                                         alt="Necklace">Necklace
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item text-black" href="{% url 'bangles' %}">
+                                    <img src="https://priyaasi.com/cdn/shop/products/BA-PR-40126-2-4_1.jpg?v=1716880480" class="me-2" 
+                                        alt="Bangles">Bangles
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item text-black" href="{% url 'bracelets' %}">
+                                    <img src="https://assets.ajio.com/medias/sys_master/root/20240129/KgT7/65b6c7de16fd2c6e6ac51014/-473Wx593H-467015089-multi-MODEL.jpg" class="me-2"
+                                        alt="Bracelets">Bracelets
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item text-black" href="{% url 'earrings' %}">
+                                    <img src="https://www.jiomart.com/images/product/original/rvhc0zbkeu/arch-fashion-traditional-gold-platted-wedding-jumkhi-earrings-collection-erg2063-product-images-orvhc0zbkeu-p602556161-0-202306231317.jpg?im=Resize=(420,420)" class="me-2" 
+                                        alt="Earrings">Earrings
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item text-black" href="{% url 'anklets' %}">
+                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVGCR-N-kPN8ncxnn_Jcv4UFrzGWh1h8MYwA&s" class="me-2" 
+                                        alt="Anklets">Anklets
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item text-black" href="{% url 'rings' %}">
+                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNa6EwBpjwx6VXeNZZ0DUI_ePTJBsGn9pclg&s" class="me-2" 
+                                        alt="Rings">Rings
+                                </a>
                             </li>
                         </ul>
                     </li>
+
                     <li class="nav-item me-5">
                         <a class="nav-link" href="{%url 'my_orders'%}">My orders</a>
                     </li>
