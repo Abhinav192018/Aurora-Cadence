@@ -6,6 +6,7 @@
 }
 
 /* Hero Carousel */
+
 .hero-carousel {
     height: 70vh;
     position: relative;
@@ -116,6 +117,7 @@
 
 
 /* product card  */
+
 .card{
     overflow: hidden;
     border-radius: 0px;
