@@ -1,6 +1,7 @@
 {%extends 'base.html'%}
 {% load static%}
-<title>Aurora Cadence</title>
+{% block title %}Aurora Cadence{% endblock %}
+
 {%block content%}
 <link rel="stylesheet" href="{%static 'css/index.css'%}">
 
@@ -9,13 +10,13 @@
 
         <div class="carousel-slide active">
             <video autoplay muted loop>
-                <source src="{%static 'video/video.mp4'%}" type="video/mp4">
+                <source src="{%static 'video/ring.mp4'%}" type="video/mp4">
             </video>
             <div class="carousel-overlay">
                 <div class="carousel-content">
                     <h1>Exquisite Collection</h1>
                     <p>Discover timeless elegance</p>
-                    <a href="#categories" class="cta-button">Shop Now</a>
+                    <a href="{%url 'products'%}" class="cta-button">Shop Now</a>
                 </div>
             </div>
         </div>
@@ -26,7 +27,7 @@
                 <div class="carousel-content">
                     <h1>Handcrafted Excellence</h1>
                     <p>Where tradition meets modern design</p>
-                    <a href="#categories" class="cta-button">Shop Now</a>
+                    <a href="{%url 'products'%}" class="cta-button">Shop Now</a>
                 </div>
             </div>
         </div>
@@ -38,7 +39,7 @@
                 <div class="carousel-content">
                     <h1>Diamond Perfection</h1>
                     <p>Sparkling diamonds for every occasion</p>
-                    <a href="#categories" class="cta-button">Shop Now</a>
+                    <a href="{%url 'products'%}" class="cta-button">Shop Now</a>
                 </div>
             </div>
         </div>
@@ -221,7 +222,7 @@
     <div class="row">
         <!-- Card 1 -->
         <div class="col-6 col-sm-6 col-md-4 col-lg-3 mb-4">
-            <a href="#" class="text-decoration-none text-dark">
+            <a href="{%url 'gold_plated'%}" class="text-decoration-none text-dark">
                 <div class="card h-100 shadow-sm border-0">
                     <img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcRySviT1pbmPfCiLpkYTd5SuM4t64fEuwiD9vvBufXZDQNsaWH5-QdJSLAfIMh7OYoGk_2W3v9CwNVfN_znEWHM_rHXqhwHWYSFPJ8JXbcZ"
                         class="card-img-top" alt="Jewellery 1">
@@ -234,7 +235,7 @@
 
         <!-- Card 2 -->
         <div class="col-6 col-sm-6 col-md-4 col-lg-3 mb-4">
-            <a href="#" class="text-decoration-none text-dark">
+            <a href="{%url 'swarovski'%}" class="text-decoration-none text-dark">
                 <div class="card h-100 shadow-sm border-0">
                     <img src="https://luxebook.in/wp-content/uploads/2023/12/Swarovski-Collection-I-Campaign-Shot-850x560.jpg"
                         class="card-img-top" alt="Swarovski Collection">
@@ -247,7 +248,7 @@
 
         <!-- Card 3 -->
         <div class="col-6 col-sm-6 col-md-4 col-lg-3 mb-4">
-            <a href="#" class="text-decoration-none text-dark">
+            <a href="{%url 'celebrity'%}" class="text-decoration-none text-dark">
                 <div class="card h-100 shadow-sm border-0">
                     <img src="https://filmfare.wwmindia.com/thumb/content/2023/feb/kiaraadvaniandsidharthmalhotra41676621821.jpg?width=1200&height=900"
                         class="card-img-top" alt="Celebrity Collection">
@@ -260,7 +261,7 @@
 
         <!-- Card 4 -->
         <div class="col-6 col-sm-6 col-md-4 col-lg-3 mb-4">
-            <a href="#" class="text-decoration-none text-dark">
+            <a href="{%url 'necklace'%}" class="text-decoration-none text-dark">
                 <div class="card shadow-sm border-0 h-100">
                     <img src="https://kolhapurisaaj.in/cdn/shop/files/Traditional_Forming_Gold_Choker_Necklace_Set_with_Floral_Design_and_Dangling_Accents_3.jpg?v=1730805753"
                         class="card-img-top" alt="Necklace">
@@ -273,7 +274,7 @@
 
         <!-- Card 5 -->
         <div class="col-6 col-sm-6 col-md-4 col-lg-3 mb-4">
-            <a href="#" class="text-decoration-none text-dark">
+            <a href="{%url 'bangles'%}" class="text-decoration-none text-dark">
                 <div class="card h-100 shadow-sm border-0">
                     <img src="https://priyaasi.com/cdn/shop/products/BA-PR-40126-2-4_1.jpg?v=1716880480"
                         class="card-img-top" alt="Bangles">
@@ -286,7 +287,7 @@
 
         <!-- Card 6 -->
         <div class="col-6 col-sm-6 col-md-4 col-lg-3 mb-4">
-            <a href="#" class="text-decoration-none text-dark">
+            <a href="{%url 'bracelets'%}" class="text-decoration-none text-dark">
                 <div class="card h-100 shadow-sm border-0">
                     <img src="https://assets.ajio.com/medias/sys_master/root/20240129/KgT7/65b6c7de16fd2c6e6ac51014/-473Wx593H-467015089-multi-MODEL.jpg"
                         class="card-img-top" alt="Bracelets">
@@ -299,7 +300,7 @@
 
         <!-- Card 7 -->
         <div class="col-6 col-sm-6 col-md-4 col-lg-3 mb-4">
-            <a href="#" class="text-decoration-none text-dark">
+            <a href="{%url 'earrings'%}" class="text-decoration-none text-dark">
                 <div class="card h-100 shadow-sm border-0">
                     <img src="https://www.jiomart.com/images/product/original/rvhc0zbkeu/arch-fashion-traditional-gold-platted-wedding-jumkhi-earrings-collection-erg2063-product-images-orvhc0zbkeu-p602556161-0-202306231317.jpg?im=Resize=(420,420)"
                         class="card-img-top" alt="Earrings">
@@ -312,7 +313,7 @@
 
         <!-- Card 8 -->
         <div class="col-6 col-sm-6 col-md-4 col-lg-3 mb-4">
-            <a href="#" class="text-decoration-none text-dark">
+            <a href="{%url 'anklets'%}" class="text-decoration-none text-dark">
                 <div class="card shadow-sm border-0 h-100">
                     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVGCR-N-kPN8ncxnn_Jcv4UFrzGWh1h8MYwA&s"
                         class="card-img-top" alt="Anklets">
@@ -325,7 +326,7 @@
 
         <!-- Card 9 -->
         <div class="col-6 col-sm-6 col-md-4 col-lg-3 mb-4">
-            <a href="#" class="text-decoration-none text-dark">
+            <a href="{%url 'rings'%}" class="text-decoration-none text-dark">
                 <div class="card h-100 shadow-sm border-0">
                     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNa6EwBpjwx6VXeNZZ0DUI_ePTJBsGn9pclg&s"
                         class="card-img-top" alt="Rings">
