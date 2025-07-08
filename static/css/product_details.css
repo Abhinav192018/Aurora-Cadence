@@ -91,7 +91,7 @@ body {
 
 .product-type {
     display: inline-block;
-    background: linear-gradient(135deg, #d4af37, #f4e4bc);
+    background: linear-gradient(135deg, #d4af37, #d4af37);
     color: white;
     padding: 8px 20px;
     border-radius: 25px;
@@ -164,7 +164,7 @@ body {
 
 /* Add to Cart Button */
 .btn-add-cart {
-    background: linear-gradient(135deg, #d4af37 0%, #f4e4bc 50%, #d4af37 100%);
+    background: linear-gradient(135deg, #d4af37 0%, #d4af37 50%, #d4af37 100%);
     border: none;
     color: white;
     padding: 15px 40px;

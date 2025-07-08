@@ -13,8 +13,8 @@
         <div class="col-lg-6">
             <div class="product-images-section">
                 <div class="main-image-container">
-                    <img id="mainImage" src="https://i.pinimg.com/736x/fd/93/20/fd93207d90d6df6f6457f0f6ef9f77e3.jpg"
-                        alt="Crystal Solitaire Ring" class="main-product-image">
+                    <img id="mainImage" src="{% static 'image/anklet11.jpg'%}" alt="Crystal Solitaire Ring"
+                        class="main-product-image">
 
                     <div class="loading-overlay" id="loadingOverlay">
                         <div class="spinner"></div>
@@ -22,16 +22,16 @@
                 </div>
 
                 <div class="sub-images-container d-flex justify-content-center">
-                    <img src="https://i.pinimg.com/736x/fd/93/20/fd93207d90d6df6f6457f0f6ef9f77e3.jpg" alt="View 1"
-                        class="sub-image active" onclick="changeMainImage(this)">
-                    <img src="https://jewelemarket.com/cdn/shop/files/bridalcombo31green.jpg?v=1721033555" alt="View 2"
-                        class="sub-image" onclick="changeMainImage(this)">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTL42bYpIkp-ibgVtOZMgLJ_jBXaF6GBeqlOg&s"
-                        alt="View 3" class="sub-image" onclick="changeMainImage(this)">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAJUxkFP7iHGYNzN2oAoKN6S_4II8L2iR9y_Bx6AA9NVZpyGgTqVLXFdYBMH-uCvHcfYc&usqp=CAU"
-                        alt="View 4" class="sub-image" onclick="changeMainImage(this)">
-                    <img src="https://i.pinimg.com/736x/2e/6a/d3/2e6ad32634efe89d9c520b8903738bc8.jpg" alt="View 5"
-                        class="sub-image" onclick="changeMainImage(this)">
+                    <img src="{% static 'image/anklet11.jpg'%}" alt="View 1" class="sub-image active"
+                        onclick="changeMainImage(this)">
+                    <img src="{% static 'image/18k12.jpg'%}" alt="View 2" class="sub-image"
+                        onclick="changeMainImage(this)">
+                    <img src="{% static 'image/18k13.jpg'%}" alt="View 3" class="sub-image"
+                        onclick="changeMainImage(this)">
+                    <img src="{% static 'image/18k14.jpg'%}" alt="View 4" class="sub-image"
+                        onclick="changeMainImage(this)">
+                    <img src="{% static 'image/18k15.jpg'%}" alt="View 5" class="sub-image"
+                        onclick="changeMainImage(this)">
                 </div>
             </div>
         </div>
@@ -43,8 +43,10 @@
                 <h1 class="product-title">Crystal Solitaire Ring</h1>
 
                 <div class="category-info">Category: <span>Engagement Ring</span></div>
-                <h2 class="details-price">₹2,500</h2>
-
+                <p class="details-price">
+                    <span class="text-decoration-line-through text-muted me-2">₹2,500</span>
+                    <span class="details-price fw-semibold">₹1,999</span>
+                </p>
                 <p class="product-desc">
                     Add a touch of timeless elegance to your collection with this exquisite 18K gold plated crystal
                     solitaire ring.
@@ -74,90 +76,13 @@
 
 <!-- Related Products Section -->
 <div class="container py-4">
-    <div class="row justify-content-center">
+    <div class="row ">
         <h3 class="section-title">You Might Also Like</h3>
 
         <div class="col-6 col-sm-6 col-md-4 col-lg-3 mb-4">
-            <a href="{% url 'product_details' %}" class="text-decoration-none text-dark">
-                <div class="card h-100 shadow-sm border-0">
-                    <img src="https://plus.unsplash.com/premium_photo-1724762183134-c17cf5f5bed2?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8Z29sZCUyMGpld2VsbGVyeXxlbnwwfHwwfHx8MA%3D%3D"
-                        class="card-img-top" alt="Jewellery 3">
-                    <div class="card-body">
-                        <h5 class="card-title mb-1">Silver Bracelet</h5>
-                        <p>
-                            <span class="price text-muted text-decoration-line-through">₹25,000</span>
-                            <span class="price text-danger fw-semibold">₹18,999</span>
-                        </p>
-                        <div class="text-end mt-4">
-                            <span class="btn btn-warning"><i class="fas fa-cart-plus"></i> Cart</span>
-                        </div>
-                    </div>
-                </div>
-            </a>
-        </div>
-
-        <div class="col-6 col-sm-6 col-md-4 col-lg-3 mb-4">
-            <a href="{% url 'product_details' %}" class="text-decoration-none text-dark">
-                <div class="card h-100 shadow-sm border-0">
-                    <img src="https://i.pinimg.com/736x/30/a4/c2/30a4c21d859e2d4f9e5f84d3badeda48.jpg"
-                        class="card-img-top" alt="Jewellery 3">
-                    <div class="card-body">
-                        <h5 class="card-title mb-1">Silver Bracelet</h5>
-                        <p>
-                            <span class="price text-muted text-decoration-line-through">₹25,000</span>
-                            <span class="price text-danger fw-semibold">₹18,999</span>
-                        </p>
-                        <div class="text-end mt-4">
-                            <span class="btn btn-warning"><i class="fas fa-cart-plus"></i> Cart</span>
-                        </div>
-                    </div>
-                </div>
-            </a>
-        </div>
-
-        <div class="col-6 col-sm-6 col-md-4 col-lg-3 mb-4">
-            <a href="{% url 'product_details' %}" class="text-decoration-none text-dark">
-                <div class="card shadow-sm border-0">
-                    <img src="https://media.istockphoto.com/id/1277517088/photo/fancy-designer-antique-golden-bracelets-for-woman-fashion.jpg?s=612x612&w=0&k=20&c=n49O0S5rIgzxJX5bU1YjwRHfou0DYPcmsv-N5JAAM14="
-                        class="card-img-top" alt="Jewellery">
-                    <div class="card-body">
-                        <h5 class="card-title mb-1">Elegant Diamond Ring</h5>
-                        <p>
-                            <span class="price text-muted text-decoration-line-through">₹25,000</span>
-                            <span class="price text-danger fw-semibold">₹18,999</span>
-                        </p>
-                        <div class="text-end mt-4">
-                            <span class="btn btn-warning"><i class="fas fa-cart-plus"></i> Cart</span>
-                        </div>
-                    </div>
-                </div>
-            </a>
-        </div>
-
-        <div class="col-6 col-sm-6 col-md-4 col-lg-3 mb-4">
-            <a href="{% url 'product_details' %}" class="text-decoration-none text-dark">
-                <div class="card h-100 shadow-sm border-0">
-                    <img src="https://flyingbeads.in/wp-content/uploads/2023/07/20230718_160313-scaled.jpg"
-                        class="card-img-top" alt="Jewellery 2">
-                    <div class="card-body">
-                        <h5 class="card-title mb-1">Gold Pendant Set</h5>
-                        <p>
-                            <span class="price text-muted text-decoration-line-through">₹25,000</span>
-                            <span class="price text-danger fw-semibold">₹18,999</span>
-                        </p>
-                        <div class="text-end mt-4">
-                            <span class="btn btn-warning"><i class="fas fa-cart-plus"></i> Cart</span>
-                        </div>
-                    </div>
-                </div>
-            </a>
-        </div>
-
-        <div class="col-6 col-sm-6 col-md-4 col-lg-3 mb-4">
             <a href="{% url 'product_details'  %}" class="text-decoration-none text-dark">
                 <div class="card h-100 shadow-sm border-0">
-                    <img src="https://plus.unsplash.com/premium_photo-1724762183134-c17cf5f5bed2?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8Z29sZCUyMGpld2VsbGVyeXxlbnwwfHwwfHx8MA%3D%3D"
-                        class="card-img-top" alt="Jewellery 3">
+                    <img src="{% static 'image/anklet11.jpg'%}" class="card-img-top" alt="Jewellery 3">
                     <div class="card-body">
                         <h5 class="card-title mb-1">Silver Bracelet</h5>
                         <p>
@@ -175,8 +100,7 @@
         <div class="col-6 col-sm-6 col-md-4 col-lg-3 mb-4">
             <a href="{% url 'product_details'  %}" class="text-decoration-none text-dark">
                 <div class="card h-100 shadow-sm border-0">
-                    <img src="https://i.pinimg.com/736x/30/a4/c2/30a4c21d859e2d4f9e5f84d3badeda48.jpg"
-                        class="card-img-top" alt="Jewellery 3">
+                    <img src="{% static 'image/18k14.jpg'%}" class="card-img-top" alt="Jewellery 3">
                     <div class="card-body">
                         <h5 class="card-title mb-1">Silver Bracelet</h5>
                         <p>
@@ -194,10 +118,9 @@
         <div class="col-6 col-sm-6 col-md-4 col-lg-3 mb-4">
             <a href="{% url 'product_details'  %}" class="text-decoration-none text-dark">
                 <div class="card shadow-sm border-0">
-                    <img src="https://media.istockphoto.com/id/1277517088/photo/fancy-designer-antique-golden-bracelets-for-woman-fashion.jpg?s=612x612&w=0&k=20&c=n49O0S5rIgzxJX5bU1YjwRHfou0DYPcmsv-N5JAAM14="
-                        class="card-img-top" alt="Jewellery">
+                    <img src="{% static 'image/anklet11.jpg'%}" class="card-img-top" alt="Jewellery">
                     <div class="card-body">
-                        <h5 class="card-title mb-1">Elegant Diamond Ring</h5>
+                        <h5 class="card-title mb-1">Elegant Ring</h5>
                         <p>
                             <span class="price text-muted text-decoration-line-through">₹25,000</span>
                             <span class="price text-danger fw-semibold">₹18,999</span>
@@ -213,8 +136,7 @@
         <div class="col-6 col-sm-6 col-md-4 col-lg-3 mb-4">
             <a href="{% url 'product_details'  %}" class="text-decoration-none text-dark">
                 <div class="card h-100 shadow-sm border-0">
-                    <img src="https://flyingbeads.in/wp-content/uploads/2023/07/20230718_160313-scaled.jpg"
-                        class="card-img-top" alt="Jewellery 2">
+                    <img src="{% static 'image/anklet11.jpg'%}" class="card-img-top" alt="Jewellery 2">
                     <div class="card-body">
                         <h5 class="card-title mb-1">Gold Pendant Set</h5>
                         <p>
@@ -228,6 +150,43 @@
                 </div>
             </a>
         </div>
+        <div class="col-6 col-sm-6 col-md-4 col-lg-3 mb-4">
+            <a href="{% url 'product_details'  %}" class="text-decoration-none text-dark">
+                <div class="card h-100 shadow-sm border-0">
+                    <img src="{%static 'image/18k14.jpg'%}" class="card-img-top" alt="Jewellery 3">
+                    <div class="card-body">
+                        <h5 class="card-title mb-1">Silver Bracelet</h5>
+                        <p>
+                            <span class="price text-muted text-decoration-line-through">₹25,000</span>
+                            <span class="price text-danger fw-semibold">₹18,999</span>
+                        </p>
+                        <div class="text-end mt-4">
+                            <span class="btn btn-warning"><i class="fas fa-cart-plus"></i> Cart</span>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+        <div class="col-6 col-sm-6 col-md-4 col-lg-3 mb-4">
+            <a href="{% url 'product_details'  %}" class="text-decoration-none text-dark">
+                <div class="card h-100 shadow-sm border-0">
+                    <img src="{%static 'image/18k13.jpg'%}" class="card-img-top" alt="Jewellery 3">
+                    <div class="card-body">
+                        <h5 class="card-title mb-1">Silver Bracelet</h5>
+                        <p>
+                            <span class="price text-muted text-decoration-line-through">₹25,000</span>
+                            <span class="price text-danger fw-semibold">₹18,999</span>
+                        </p>
+                        <div class="text-end mt-4">
+                            <span class="btn btn-warning"><i class="fas fa-cart-plus"></i> Cart</span>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+
     </div>
 </div>
 
