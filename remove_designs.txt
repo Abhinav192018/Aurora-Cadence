@@ -1,0 +1,698 @@
+<!-- product section  -->
+
+<div class="container py-4">
+    <h2 class="head-text text-center fw-bold mb-5">18K gold Plated</h2>
+    <div class="row justify-content-center">
+
+        <div class="col-6 col-sm-6 col-md-4 col-lg-3 mb-4">
+            <a href="{% url 'product_details' %}" class="text-decoration-none text-dark">
+                <div class="card h-100 shadow-sm border-0 position-relative">
+                    <!-- Badge -->
+                    <span class="badge bg-warning text-black position-absolute top-0 end-0 m-2 z-1 fas fa-stopwatch">
+                       Low Stock
+                    </span>
+
+                    <img src="{% static 'image/18k1.jpg' %}" class="card-img-top" alt="Jewellery 3">
+                    <div class="card-body">
+                        <h5 class="card-title mb-1">Silver Bracelet</h5>
+                        <p>
+                            <span class="price text-muted text-decoration-line-through">₹25,000</span>
+                            <span class="price text-danger fw-semibold">₹18,999</span>
+                        </p>
+                        <div class="text-end mt-4">
+                            <span class="btn btn-warning"><i class="fas fa-cart-plus"></i> Cart</span>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+
+        <div class="col-6 col-sm-6 col-md-4 col-lg-3 mb-4">
+            <a href="{% url 'product_details' %}" class="text-decoration-none text-dark">
+                <div class="card h-100 shadow-sm border-0">
+                    <img src="{%static 'image/18k12.jpg'%}" class="card-img-top" alt="Jewellery 3">
+                    <div class="card-body">
+                        <h5 class="card-title mb-1">Silver Bracelet</h5>
+                        <p>
+                            <span class="price text-muted text-decoration-line-through">₹25,000</span>
+                            <span class="price text-danger fw-semibold">₹18,999</span>
+                        </p>
+                        <div class="text-end mt-4">
+                            <span class="btn btn-warning"><i class="fas fa-cart-plus"></i> Cart</span>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+        <div class="col-6 col-sm-6 col-md-4 col-lg-3 mb-4">
+            <a href="{% url 'product_details' %}" class="text-decoration-none text-dark">
+                <div class="card shadow-sm border-0">
+                    <img src="{%static 'image/18k13.jpg'%}" class="card-img-top" alt="Jewellery">
+                    <div class="card-body">
+                        <h5 class="card-title mb-1">Elegant Ring</h5>
+                        <p>
+                            <span class="price text-muted text-decoration-line-through">₹25,000</span>
+                            <span class="price text-danger fw-semibold">₹18,999</span>
+                        </p>
+                        <div class="text-end mt-4">
+                            <span class="btn btn-warning"><i class="fas fa-cart-plus"></i> Cart</span>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+
+
+        <div class="col-6 col-sm-6 col-md-4 col-lg-3 mb-4">
+            <a href="{% url 'product_details'  %}" class="text-decoration-none text-dark">
+                <div class="card h-100 shadow-sm border-0 position-relative">
+                    <!-- Badge -->
+                    <span class="badge bg-danger position-absolute top-0 end-0 m-2 z-1 fas fa-times-circle">
+                       out of Stock
+                    </span>
+                    <img src="{%static 'image/18k14.jpg'%}" class="card-img-top" alt="Jewellery 2">
+                    <div class="card-body">
+                        <h5 class="card-title mb-1">Gold Pendant Set</h5>
+                        <p>
+                            <span class="price text-muted text-decoration-line-through">₹25,000</span>
+                            <span class="price text-danger fw-semibold">₹18,999</span>
+                        </p>
+                        <div class="text-end mt-4">
+                            <span class="btn btn-danger "><i class="fas fa-close"></i> Cart</span>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+
+    </div>
+</div>
+
+<div class="container py-4">
+    <h2 class="head-text text-center fw-bold mb-5">Swarovski</h2>
+    <div class="row justify-content-center">
+        <div class="col-6 col-sm-6 col-md-4 col-lg-3 mb-4">
+            <a href="{% url 'product_details'  %}" class="text-decoration-none text-dark">
+                <div class="card h-100 shadow-sm border-0">
+                    <img src="{%static 'image/swarovoski1.jpg'%}" class="card-img-top" alt="Jewellery 3">
+                    <div class="card-body">
+                        <h5 class="card-title mb-1">Silver Bracelet</h5>
+                        <p>
+                            <span class="price text-muted text-decoration-line-through">₹25,000</span>
+                            <span class="price text-danger fw-semibold">₹18,999</span>
+                        </p>
+                        <div class="text-end mt-4">
+                            <span class="btn btn-warning"><i class="fas fa-cart-plus"></i> Cart</span>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+        <div class="col-6 col-sm-6 col-md-4 col-lg-3 mb-4">
+            <a href="{% url 'product_details'  %}" class="text-decoration-none text-dark">
+                <div class="card h-100 shadow-sm border-0">
+                    <img src="{%static 'image/swarovoski12.jpg'%}" class="card-img-top" alt="Jewellery 3">
+                    <div class="card-body">
+                        <h5 class="card-title mb-1">Silver Bracelet</h5>
+                        <p>
+                            <span class="price text-muted text-decoration-line-through">₹25,000</span>
+                            <span class="price text-danger fw-semibold">₹18,999</span>
+                        </p>
+                        <div class="text-end mt-4">
+                            <span class="btn btn-warning"><i class="fas fa-cart-plus"></i> Cart</span>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+        <div class="col-6 col-sm-6 col-md-4 col-lg-3 mb-4">
+            <a href="{% url 'product_details'  %}" class="text-decoration-none text-dark">
+                <div class="card shadow-sm border-0">
+                    <img src="{%static 'image/swarovoski13.jpg'%}" class="card-img-top" alt="Jewellery">
+                    <div class="card-body">
+                        <h5 class="card-title mb-1">Elegant Ring</h5>
+                        <p>
+                            <span class="price text-muted text-decoration-line-through">₹25,000</span>
+                            <span class="price text-danger fw-semibold">₹18,999</span>
+                        </p>
+                        <div class="text-end mt-4">
+                            <span class="btn btn-warning"><i class="fas fa-cart-plus"></i> Cart</span>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+        <div class="col-6 col-sm-6 col-md-4 col-lg-3 mb-4">
+            <a href="{% url 'product_details'  %}" class="text-decoration-none text-dark">
+                <div class="card h-100 shadow-sm border-0">
+                    <img src="{%static 'image/swarovoski14.jpg'%}" class="card-img-top" alt="Jewellery 2">
+                    <div class="card-body">
+                        <h5 class="card-title mb-1">Gold Pendant Set</h5>
+                        <p>
+                            <span class="price text-muted text-decoration-line-through">₹25,000</span>
+                            <span class="price text-danger fw-semibold">₹18,999</span>
+                        </p>
+                        <div class="text-end mt-4">
+                            <span class="btn btn-warning"><i class="fas fa-cart-plus"></i> Cart</span>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+
+    </div>
+</div>
+
+
+<div class="container py-4">
+    <h2 class="head-text text-center fw-bold mb-5">Celebrity Collection</h2>
+    <div class="row justify-content-center">
+        <div class="col-6 col-sm-6 col-md-4 col-lg-3 mb-4">
+            <a href="{% url 'product_details'  %}" class="text-decoration-none text-dark">
+                <div class="card h-100 shadow-sm border-0">
+                    <img src="{%static 'image/swarovoski1.jpg'%}" class="card-img-top" alt="Jewellery 3">
+                    <div class="card-body">
+                        <h5 class="card-title mb-1">Silver Bracelet</h5>
+                        <p>
+                            <span class="price text-muted text-decoration-line-through">₹25,000</span>
+                            <span class="price text-danger fw-semibold">₹18,999</span>
+                        </p>
+                        <div class="text-end mt-4">
+                            <span class="btn btn-warning"><i class="fas fa-cart-plus"></i> Cart</span>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+        <div class="col-6 col-sm-6 col-md-4 col-lg-3 mb-4">
+            <a href="{% url 'product_details'  %}" class="text-decoration-none text-dark">
+                <div class="card h-100 shadow-sm border-0">
+                    <img src="{%static 'image/swarovoski12.jpg'%}" class="card-img-top" alt="Jewellery 3">
+                    <div class="card-body">
+                        <h5 class="card-title mb-1">Silver Bracelet</h5>
+                        <p>
+                            <span class="price text-muted text-decoration-line-through">₹25,000</span>
+                            <span class="price text-danger fw-semibold">₹18,999</span>
+                        </p>
+                        <div class="text-end mt-4">
+                            <span class="btn btn-warning"><i class="fas fa-cart-plus"></i> Cart</span>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+        <div class="col-6 col-sm-6 col-md-4 col-lg-3 mb-4">
+            <a href="{% url 'product_details'  %}" class="text-decoration-none text-dark">
+                <div class="card shadow-sm border-0">
+                    <img src="{%static 'image/swarovoski13.jpg'%}" class="card-img-top" alt="Jewellery">
+                    <div class="card-body">
+                        <h5 class="card-title mb-1">Elegant Ring</h5>
+                        <p>
+                            <span class="price text-muted text-decoration-line-through">₹25,000</span>
+                            <span class="price text-danger fw-semibold">₹18,999</span>
+                        </p>
+                        <div class="text-end mt-4">
+                            <span class="btn btn-warning"><i class="fas fa-cart-plus"></i> Cart</span>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+        <div class="col-6 col-sm-6 col-md-4 col-lg-3 mb-4">
+            <a href="{% url 'product_details'  %}" class="text-decoration-none text-dark">
+                <div class="card h-100 shadow-sm border-0">
+                    <img src="{%static 'image/swarovoski14.jpg'%}" class="card-img-top" alt="Jewellery 2">
+                    <div class="card-body">
+                        <h5 class="card-title mb-1">Gold Pendant Set</h5>
+                        <p>
+                            <span class="price text-muted text-decoration-line-through">₹25,000</span>
+                            <span class="price text-danger fw-semibold">₹18,999</span>
+                        </p>
+                        <div class="text-end mt-4">
+                            <span class="btn btn-warning"><i class="fas fa-cart-plus"></i> Cart</span>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+</div>
+
+<div class="conatiner-fluid bg-black text-white py-5">
+    <div class="container">
+        <h2 class="head-text fw-bold mb-4">Featured Collection</h2>
+        <p class="text">
+            The Featured Collection
+            highlights the most popular and trending pieces that combine style
+        </p>
+
+        <!-- Ring -->
+        <div class="container py-4">
+            <h3 class="head-text mb-5">Ring</h3>
+            <div class="row justify-content-center">
+                <div class="col-6 col-sm-6 col-md-4 col-lg-3 mb-4">
+                    <a href="{% url 'product_details'  %}" class="text-decoration-none text-dark">
+                        <div class="card h-100 shadow-sm border-0">
+                            <img src="{%static 'image/ring11.jpg'%}" class="card-img-top" alt="Jewellery 3">
+                            <div class="card-body">
+                                <h5 class="card-title mb-1">Silver Bracelet</h5>
+                                <p>
+                                    <span class="price text-muted text-decoration-line-through">₹25,000</span>
+                                    <span class="price text-danger fw-semibold">₹18,999</span>
+                                </p>
+                                <div class="text-end mt-4">
+                                    <span class="btn btn-warning"><i class="fas fa-cart-plus"></i> Cart</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-6 col-sm-6 col-md-4 col-lg-3 mb-4">
+                    <a href="{% url 'product_details'  %}" class="text-decoration-none text-dark">
+                        <div class="card h-100 shadow-sm border-0">
+                            <img src="{%static 'image/ring11.jpg'%}" class="card-img-top" alt="Jewellery 3">
+                            <div class="card-body">
+                                <h5 class="card-title mb-1">Silver Bracelet</h5>
+                                <p>
+                                    <span class="price text-muted text-decoration-line-through">₹25,000</span>
+                                    <span class="price text-danger fw-semibold">₹18,999</span>
+                                </p>
+                                <div class="text-end mt-4">
+                                    <span class="btn btn-warning"><i class="fas fa-cart-plus"></i> Cart</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-6 col-sm-6 col-md-4 col-lg-3 mb-4">
+                    <a href="{% url 'product_details'  %}" class="text-decoration-none text-dark">
+                        <div class="card shadow-sm border-0">
+                            <img src="{%static 'image/ring11.jpg'%}" class="card-img-top" alt="Jewellery">
+                            <div class="card-body">
+                                <h5 class="card-title mb-1">Elegant Ring</h5>
+                                <p>
+                                    <span class="price text-muted text-decoration-line-through">₹25,000</span>
+                                    <span class="price text-danger fw-semibold">₹18,999</span>
+                                </p>
+                                <div class="text-end mt-4">
+                                    <span class="btn btn-warning"><i class="fas fa-cart-plus"></i> Cart</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-6 col-sm-6 col-md-4 col-lg-3 mb-4">
+                    <a href="{% url 'product_details'  %}" class="text-decoration-none text-dark">
+                        <div class="card h-100 shadow-sm border-0">
+                            <img src="{%static 'image/ring11.jpg'%}" class="card-img-top" alt="Jewellery 2">
+                            <div class="card-body">
+                                <h5 class="card-title mb-1">Gold Pendant Set</h5>
+                                <p>
+                                    <span class="price text-muted text-decoration-line-through">₹25,000</span>
+                                    <span class="price text-danger fw-semibold">₹18,999</span>
+                                </p>
+                                <div class="text-end mt-4">
+                                    <span class="btn btn-warning"><i class="fas fa-cart-plus"></i> Cart</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Earring  -->
+        <div class="container py-4">
+            <h3 class="head-text mb-5">Earring</h3>
+            <div class="row justify-content-center">
+
+                <div class="col-6 col-sm-6 col-md-4 col-lg-3 mb-4">
+                    <a href="{% url 'product_details'  %}" class="text-decoration-none text-dark">
+                        <div class="card h-100 shadow-sm border-0">
+                            <img src="{%static 'image/earring11.jpg'%}" class="card-img-top" alt="Jewellery 3">
+                            <div class="card-body">
+                                <h5 class="card-title mb-1">Silver Bracelet</h5>
+                                <p>
+                                    <span class="price text-muted text-decoration-line-through">₹25,000</span>
+                                    <span class="price text-danger fw-semibold">₹18,999</span>
+                                </p>
+                                <div class="text-end mt-4">
+                                    <span class="btn btn-warning"><i class="fas fa-cart-plus"></i> Cart</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+
+                <div class="col-6 col-sm-6 col-md-4 col-lg-3 mb-4">
+                    <a href="{% url 'product_details'  %}" class="text-decoration-none text-dark">
+                        <div class="card h-100 shadow-sm border-0">
+                            <img src="{%static 'image/earring11.jpg'%}" class="card-img-top" alt="Jewellery 3">
+                            <div class="card-body">
+                                <h5 class="card-title mb-1">Silver Bracelet</h5>
+                                <p>
+                                    <span class="price text-muted text-decoration-line-through">₹25,000</span>
+                                    <span class="price text-danger fw-semibold">₹18,999</span>
+                                </p>
+                                <div class="text-end mt-4">
+                                    <span class="btn btn-warning"><i class="fas fa-cart-plus"></i> Cart</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+
+
+                <div class="col-6 col-sm-6 col-md-4 col-lg-3 mb-4">
+                    <a href="{% url 'product_details'  %}" class="text-decoration-none text-dark">
+                        <div class="card h-100 shadow-sm border-0">
+                            <img src="{%static 'image/earring11.jpg'%}" class="card-img-top" alt="Jewellery 2">
+                            <div class="card-body">
+                                <h5 class="card-title mb-1">Gold Pendant Set</h5>
+                                <p>
+                                    <span class="price text-muted text-decoration-line-through">₹25,000</span>
+                                    <span class="price text-danger fw-semibold">₹18,999</span>
+                                </p>
+                                <div class="text-end mt-4">
+                                    <span class="btn btn-warning"><i class="fas fa-cart-plus"></i> Cart</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-6 col-sm-6 col-md-4 col-lg-3 mb-4">
+                    <a href="{% url 'product_details'  %}" class="text-decoration-none text-dark">
+                        <div class="card shadow-sm border-0">
+                            <img src="{%static 'image/earring11.jpg'%}" class="card-img-top" alt="Jewellery">
+                            <div class="card-body">
+                                <h5 class="card-title mb-1">Elegant Ring</h5>
+                                <p>
+                                    <span class="price text-muted text-decoration-line-through">₹25,000</span>
+                                    <span class="price text-danger fw-semibold">₹18,999</span>
+                                </p>
+                                <div class="text-end mt-4">
+                                    <span class="btn btn-warning"><i class="fas fa-cart-plus"></i> Cart</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Necklace -->
+        <div class="container py-4">
+            <h3 class="head-text mb-5">Necklace</h3>
+            <div class="row justify-content-center">
+
+
+
+                <div class="col-6 col-sm-6 col-md-4 col-lg-3 mb-4">
+                    <a href="{% url 'product_details'  %}" class="text-decoration-none text-dark">
+                        <div class="card h-100 shadow-sm border-0">
+                            <img src="{%static 'image/neckles.jpg'%}" class="card-img-top" alt="Jewellery 3">
+                            <div class="card-body">
+                                <h5 class="card-title mb-1">Silver Bracelet</h5>
+                                <p>
+                                    <span class="price text-muted text-decoration-line-through">₹25,000</span>
+                                    <span class="price text-danger fw-semibold">₹18,999</span>
+                                </p>
+                                <div class="text-end mt-4">
+                                    <span class="btn btn-warning"><i class="fas fa-cart-plus"></i> Cart</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-6 col-sm-6 col-md-4 col-lg-3 mb-4">
+                    <a href="{% url 'product_details'  %}" class="text-decoration-none text-dark">
+                        <div class="card h-100 shadow-sm border-0">
+                            <img src="{%static 'image/neckles.jpg'%}" class="card-img-top" alt="Jewellery 3">
+                            <div class="card-body">
+                                <h5 class="card-title mb-1">Silver Bracelet</h5>
+                                <p>
+                                    <span class="price text-muted text-decoration-line-through">₹25,000</span>
+                                    <span class="price text-danger fw-semibold">₹18,999</span>
+                                </p>
+                                <div class="text-end mt-4">
+                                    <span class="btn btn-warning"><i class="fas fa-cart-plus"></i> Cart</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-6 col-sm-6 col-md-4 col-lg-3 mb-4">
+                    <a href="{% url 'product_details'  %}" class="text-decoration-none text-dark">
+                        <div class="card shadow-sm border-0">
+                            <img src="{%static 'image/neckles.jpg'%}" class="card-img-top" alt="Jewellery">
+                            <div class="card-body">
+                                <h5 class="card-title mb-1">Elegant Ring</h5>
+                                <p>
+                                    <span class="price text-muted text-decoration-line-through">₹25,000</span>
+                                    <span class="price text-danger fw-semibold">₹18,999</span>
+                                </p>
+                                <div class="text-end mt-4">
+                                    <span class="btn btn-warning"><i class="fas fa-cart-plus"></i> Cart</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-6 col-sm-6 col-md-4 col-lg-3 mb-4">
+                    <a href="{% url 'product_details'  %}" class="text-decoration-none text-dark">
+                        <div class="card h-100 shadow-sm border-0">
+                            <img src="{%static 'image/neckles.jpg'%}" class="card-img-top" alt="Jewellery 2">
+                            <div class="card-body">
+                                <h5 class="card-title mb-1">Gold Pendant Set</h5>
+                                <p>
+                                    <span class="price text-muted text-decoration-line-through">₹25,000</span>
+                                    <span class="price text-danger fw-semibold">₹18,999</span>
+                                </p>
+                                <div class="text-end mt-4">
+                                    <span class="btn btn-warning"><i class="fas fa-cart-plus"></i> Cart</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Bracelet -->
+        <div class="container py-4">
+            <h3 class="head-text mb-5">Bracelet</h3>
+            <div class="row justify-content-center">
+
+
+
+                <div class="col-6 col-sm-6 col-md-4 col-lg-3 mb-4">
+                    <a href="{% url 'product_details'  %}" class="text-decoration-none text-dark">
+                        <div class="card h-100 shadow-sm border-0">
+                            <img src="{%static 'image/bracelet11.jpg'%}" class="card-img-top" alt="Jewellery 3">
+                            <div class="card-body">
+                                <h5 class="card-title mb-1">Silver Bracelet</h5>
+                                <p>
+                                    <span class="price text-muted text-decoration-line-through">₹25,000</span>
+                                    <span class="price text-danger fw-semibold">₹18,999</span>
+                                </p>
+                                <div class="text-end mt-4">
+                                    <span class="btn btn-warning"><i class="fas fa-cart-plus"></i> Cart</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-6 col-sm-6 col-md-4 col-lg-3 mb-4">
+                    <a href="{% url 'product_details'  %}" class="text-decoration-none text-dark">
+                        <div class="card h-100 shadow-sm border-0">
+                            <img src="{%static 'image/bracelet11.jpg'%}" class="card-img-top" alt="Jewellery 3">
+                            <div class="card-body">
+                                <h5 class="card-title mb-1">Silver Bracelet</h5>
+                                <p>
+                                    <span class="price text-muted text-decoration-line-through">₹25,000</span>
+                                    <span class="price text-danger fw-semibold">₹18,999</span>
+                                </p>
+                                <div class="text-end mt-4">
+                                    <span class="btn btn-warning"><i class="fas fa-cart-plus"></i> Cart</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-6 col-sm-6 col-md-4 col-lg-3 mb-4">
+                    <a href="{% url 'product_details'  %}" class="text-decoration-none text-dark">
+                        <div class="card h-100 shadow-sm border-0">
+                            <img src="{%static 'image/bracelet11.jpg'%}" class="card-img-top" alt="Jewellery 3">
+                            <div class="card-body">
+                                <h5 class="card-title mb-1">Silver Bracelet</h5>
+                                <p>
+                                    <span class="price text-muted text-decoration-line-through">₹25,000</span>
+                                    <span class="price text-danger fw-semibold">₹18,999</span>
+                                </p>
+                                <div class="text-end mt-4">
+                                    <span class="btn btn-warning"><i class="fas fa-cart-plus"></i> Cart</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-6 col-sm-6 col-md-4 col-lg-3 mb-4">
+                    <a href="{% url 'product_details'  %}" class="text-decoration-none text-dark">
+                        <div class="card h-100 shadow-sm border-0">
+                            <img src="{%static 'image/bracelet11.jpg'%}" class="card-img-top" alt="Jewellery 3">
+                            <div class="card-body">
+                                <h5 class="card-title mb-1">Silver Bracelet</h5>
+                                <p>
+                                    <span class="price text-muted text-decoration-line-through">₹25,000</span>
+                                    <span class="price text-danger fw-semibold">₹18,999</span>
+                                </p>
+                                <div class="text-end mt-4">
+                                    <span class="btn btn-warning"><i class="fas fa-cart-plus"></i> Cart</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Anklet -->
+        <div class="container py-4">
+            <h3 class="head-text mb-5">Anklet</h3>
+            <div class="row justify-content-center">
+                <div class="col-6 col-sm-6 col-md-4 col-lg-3 mb-4">
+                    <a href="{% url 'product_details'  %}" class="text-decoration-none text-dark">
+                        <div class="card h-100 shadow-sm border-0">
+                            <img src="{% static 'image/anklet11.jpg'%}" class="card-img-top" alt="Jewellery 3">
+                            <div class="card-body">
+                                <h5 class="card-title mb-1">Silver Bracelet</h5>
+                                <p>
+                                    <span class="price text-muted text-decoration-line-through">₹25,000</span>
+                                    <span class="price text-danger fw-semibold">₹18,999</span>
+                                </p>
+                                <div class="text-end mt-4">
+                                    <span class="btn btn-warning"><i class="fas fa-cart-plus"></i> Cart</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-6 col-sm-6 col-md-4 col-lg-3 mb-4">
+                    <a href="{% url 'product_details'  %}" class="text-decoration-none text-dark">
+                        <div class="card h-100 shadow-sm border-0">
+                            <img src="{% static 'image/anklet11.jpg'%}" class="card-img-top" alt="Jewellery 3">
+                            <div class="card-body">
+                                <h5 class="card-title mb-1">Silver Bracelet</h5>
+                                <p>
+                                    <span class="price text-muted text-decoration-line-through">₹25,000</span>
+                                    <span class="price text-danger fw-semibold">₹18,999</span>
+                                </p>
+                                <div class="text-end mt-4">
+                                    <span class="btn btn-warning"><i class="fas fa-cart-plus"></i> Cart</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-6 col-sm-6 col-md-4 col-lg-3 mb-4">
+                    <a href="{% url 'product_details'  %}" class="text-decoration-none text-dark">
+                        <div class="card shadow-sm border-0">
+                            <img src="{% static 'image/anklet11.jpg'%}" class="card-img-top" alt="Jewellery">
+                            <div class="card-body">
+                                <h5 class="card-title mb-1">Elegant Ring</h5>
+                                <p>
+                                    <span class="price text-muted text-decoration-line-through">₹25,000</span>
+                                    <span class="price text-danger fw-semibold">₹18,999</span>
+                                </p>
+                                <div class="text-end mt-4">
+                                    <span class="btn btn-warning"><i class="fas fa-cart-plus"></i> Cart</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-6 col-sm-6 col-md-4 col-lg-3 mb-4">
+                    <a href="{% url 'product_details'  %}" class="text-decoration-none text-dark">
+                        <div class="card h-100 shadow-sm border-0">
+                            <img src="{% static 'image/anklet11.jpg'%}" class="card-img-top" alt="Jewellery 2">
+                            <div class="card-body">
+                                <h5 class="card-title mb-1">Gold Pendant Set</h5>
+                                <p>
+                                    <span class="price text-muted text-decoration-line-through">₹25,000</span>
+                                    <span class="price text-danger fw-semibold">₹18,999</span>
+                                </p>
+                                <div class="text-end mt-4">
+                                    <span class="btn btn-warning"><i class="fas fa-cart-plus"></i> Cart</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+
+
+
+    </div>
+</div>
+
+
+
+
+store to store management system ERP
+-----------------------------------
+
+- if gst are same it becomes same and 
+
+- every product have unique qr
+
+- while manual entry need to generate rq code also each qr code will be unique (qr count generate based on givinng the quantity)
+
+- every product have qr code (EOD will taken by scanning thw RQ for theft dectection) show the un scanned product
+
+- need to implement a transfer option insteed of sold mension for urgent needed of product (A store to B store)
+
+- service man can assign a complaint to technition and techie can update status (spare also need to
+  update from the stock) while closing spare cost and service cost should be calculate and send msg to the client
+
+- fund transfer from branch A to branch B should be request and accept if it was successfully
+  tranfered then only the accounts should be close EOD
+
+- salary cut based on leave if leave is grateater than 5 days 2 x salary should be cut than normal perday salary (HR depo)
+  
+- calculate the purache price and sold price if it is lost it sould be mensioned seperatily based on the (brand name)
+
+- based on the amount and persentage the sales persions will get the incentives
+
+- performance calculator of each sales persons 
+
+- 

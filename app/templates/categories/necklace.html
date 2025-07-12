@@ -71,13 +71,17 @@
 
 
         <div class="container py-4">
-            <div class="row justify-content-center">
-
+            <div class="row">
                 <div class="col-6 col-sm-6 col-md-4 col-lg-3 mb-4">
                     <a href="{% url 'product_details' %}" class="text-decoration-none text-dark">
-                        <div class="card h-100 shadow-sm border-0">
-                            <img src="https://plus.unsplash.com/premium_photo-1724762183134-c17cf5f5bed2?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8Z29sZCUyMGpld2VsbGVyeXxlbnwwfHwwfHx8MA%3D%3D"
-                                class="card-img-top" alt="Jewellery 3">
+                        <div class="card h-100 shadow-sm border-0 position-relative">
+                            <!-- Badge -->
+                            <span
+                                class="badge bg-warning text-black position-absolute top-0 end-0 m-2 z-1 fas fa-stopwatch">
+                                Low Stock
+                            </span>
+
+                            <img src="{% static 'image/18k1.jpg' %}" class="card-img-top" alt="Jewellery 3">
                             <div class="card-body">
                                 <h5 class="card-title mb-1">Silver Bracelet</h5>
                                 <p>
@@ -92,11 +96,11 @@
                     </a>
                 </div>
 
+
                 <div class="col-6 col-sm-6 col-md-4 col-lg-3 mb-4">
                     <a href="{% url 'product_details' %}" class="text-decoration-none text-dark">
                         <div class="card h-100 shadow-sm border-0">
-                            <img src="https://i.pinimg.com/736x/30/a4/c2/30a4c21d859e2d4f9e5f84d3badeda48.jpg"
-                                class="card-img-top" alt="Jewellery 3">
+                            <img src="{%static 'image/18k12.jpg'%}" class="card-img-top" alt="Jewellery 3">
                             <div class="card-body">
                                 <h5 class="card-title mb-1">Silver Bracelet</h5>
                                 <p>
@@ -114,8 +118,7 @@
                 <div class="col-6 col-sm-6 col-md-4 col-lg-3 mb-4">
                     <a href="{% url 'product_details' %}" class="text-decoration-none text-dark">
                         <div class="card shadow-sm border-0">
-                            <img src="https://media.istockphoto.com/id/1277517088/photo/fancy-designer-antique-golden-bracelets-for-woman-fashion.jpg?s=612x612&w=0&k=20&c=n49O0S5rIgzxJX5bU1YjwRHfou0DYPcmsv-N5JAAM14="
-                                class="card-img-top" alt="Jewellery">
+                            <img src="{%static 'image/18k13.jpg'%}" class="card-img-top" alt="Jewellery">
                             <div class="card-body">
                                 <h5 class="card-title mb-1">Elegant Ring</h5>
                                 <p>
@@ -130,11 +133,16 @@
                     </a>
                 </div>
 
+
+
                 <div class="col-6 col-sm-6 col-md-4 col-lg-3 mb-4">
-                    <a href="{% url 'product_details' %}" class="text-decoration-none text-dark">
-                        <div class="card h-100 shadow-sm border-0">
-                            <img src="https://flyingbeads.in/wp-content/uploads/2023/07/20230718_160313-scaled.jpg"
-                                class="card-img-top" alt="Jewellery 2">
+                    <a href="{% url 'product_details'  %}" class="text-decoration-none text-dark">
+                        <div class="card h-100 shadow-sm border-0 position-relative">
+                            <!-- Badge -->
+                            <span class="badge bg-danger position-absolute top-0 end-0 m-2 z-1 fas fa-times-circle">
+                                out of Stock
+                            </span>
+                            <img src="{%static 'image/18k14.jpg'%}" class="card-img-top" alt="Jewellery 2">
                             <div class="card-body">
                                 <h5 class="card-title mb-1">Gold Pendant Set</h5>
                                 <p>
@@ -142,7 +150,7 @@
                                     <span class="price text-danger fw-semibold">₹18,999</span>
                                 </p>
                                 <div class="text-end mt-4">
-                                    <span class="btn btn-warning"><i class="fas fa-cart-plus"></i> Cart</span>
+                                    <span class="btn btn-danger "><i class="fas fa-close"></i> Cart</span>
                                 </div>
                             </div>
                         </div>
@@ -152,8 +160,7 @@
                 <div class="col-6 col-sm-6 col-md-4 col-lg-3 mb-4">
                     <a href="{% url 'product_details'  %}" class="text-decoration-none text-dark">
                         <div class="card h-100 shadow-sm border-0">
-                            <img src="https://plus.unsplash.com/premium_photo-1724762183134-c17cf5f5bed2?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8Z29sZCUyMGpld2VsbGVyeXxlbnwwfHwwfHx8MA%3D%3D"
-                                class="card-img-top" alt="Jewellery 3">
+                            <img src="{%static 'image/swarovoski1.jpg'%}" class="card-img-top" alt="Jewellery 3">
                             <div class="card-body">
                                 <h5 class="card-title mb-1">Silver Bracelet</h5>
                                 <p>
@@ -171,8 +178,7 @@
                 <div class="col-6 col-sm-6 col-md-4 col-lg-3 mb-4">
                     <a href="{% url 'product_details'  %}" class="text-decoration-none text-dark">
                         <div class="card h-100 shadow-sm border-0">
-                            <img src="https://i.pinimg.com/736x/30/a4/c2/30a4c21d859e2d4f9e5f84d3badeda48.jpg"
-                                class="card-img-top" alt="Jewellery 3">
+                            <img src="{%static 'image/swarovoski12.jpg'%}" class="card-img-top" alt="Jewellery 3">
                             <div class="card-body">
                                 <h5 class="card-title mb-1">Silver Bracelet</h5>
                                 <p>
@@ -190,8 +196,7 @@
                 <div class="col-6 col-sm-6 col-md-4 col-lg-3 mb-4">
                     <a href="{% url 'product_details'  %}" class="text-decoration-none text-dark">
                         <div class="card shadow-sm border-0">
-                            <img src="https://media.istockphoto.com/id/1277517088/photo/fancy-designer-antique-golden-bracelets-for-woman-fashion.jpg?s=612x612&w=0&k=20&c=n49O0S5rIgzxJX5bU1YjwRHfou0DYPcmsv-N5JAAM14="
-                                class="card-img-top" alt="Jewellery">
+                            <img src="{%static 'image/swarovoski13.jpg'%}" class="card-img-top" alt="Jewellery">
                             <div class="card-body">
                                 <h5 class="card-title mb-1">Elegant Ring</h5>
                                 <p>
@@ -209,8 +214,7 @@
                 <div class="col-6 col-sm-6 col-md-4 col-lg-3 mb-4">
                     <a href="{% url 'product_details'  %}" class="text-decoration-none text-dark">
                         <div class="card h-100 shadow-sm border-0">
-                            <img src="https://flyingbeads.in/wp-content/uploads/2023/07/20230718_160313-scaled.jpg"
-                                class="card-img-top" alt="Jewellery 2">
+                            <img src="{%static 'image/swarovoski14.jpg'%}" class="card-img-top" alt="Jewellery 2">
                             <div class="card-body">
                                 <h5 class="card-title mb-1">Gold Pendant Set</h5>
                                 <p>
