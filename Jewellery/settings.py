@@ -31,6 +31,7 @@ ALLOWED_HOSTS = ["*"]
 # Application definition
 
 INSTALLED_APPS = [
+    'jazzmin',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -132,3 +133,33 @@ MEDIA_ROOT = BASE_DIR / "media"
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+
+
+JAZZMIN_SETTINGS = {
+    "site_title": "AURORA CADENCE",
+    "site_header": "AURORA CADENCE Admin Portal",
+    "site_brand": "AURORA CADENCE",
+    "site_icon": "images/favicon.ico",
+
+
+
+    "welcome_sign": "Welcome to AURORA CADENCE",
+    "copyright": "Aurora Cadence © 2025",
+
+  
+
+    "topmenu_links": [
+        {"name": "Home", "url": "/", "permissions": ["auth.view_user"]},
+        {"app": "auth"},
+        {"model": "yourapp.Product"},
+    ],
+
+    "show_sidebar": True,
+    "navigation_expanded": True,
+
+    "theme": "lux",  # Lux is clean and classy — Bootstrap-based
+
+    "custom_css": "css/custom.css",
+}
+

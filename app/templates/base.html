@@ -37,141 +37,87 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-black bg-black fixed-top ecom-navbar position-fixed">
-        <div class="container-fluid ecom-navbar-container">
-
-            <div class="d-flex d-lg-none justify-content-between align-items-center w-100">
-                <!-- Logo -->
-                <a class="navbar-brand ecom-navbar-brand" href="{%url 'home'%}">
-                    <img src="{%static 'images/logo.png'%}" alt="Logo" class="ecom-navbar-logo" style="height: 60px;">
-                </a>
-
-                <!-- Cart + Hamburger -->
-                <div class="d-flex align-items-center">
-                    <!-- 🛒 Cart Icon (Mobile View) with Badge -->
-                    <a href="{%url 'cart'%}" class="text-white fs-5 me-3 position-relative">
-                        <i class="fas fa-shopping-cart"></i>
-                        <span
-                            class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger text-white px-2 py-1"
-                            style="font-size: 0.7rem;">
-                            3
-                        </span>
-                    </a>
-
-                    <!-- Hamburger Toggle -->
-                    <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#ecomNavbarContent" aria-controls="ecomNavbarContent" aria-expanded="false"
-                        aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
+    <div class="top-navbar top-0">
+        <div class="container-fluid d-lg-flex align-items-center justify-content-between">
+            <!-- Logo -->
+            <div class="d-flex align-items-center mb-2 mb-lg-0">
+                <img src="{% static 'images/logo.png' %}" alt="Logo" height="50" class="me-2" />
+                <div class="logo">
                 </div>
             </div>
 
-            <!-- 🖥️ Desktop View -->
-            <a class="navbar-brand ecom-navbar-brand d-none d-lg-block" href="{%url 'home'%}">
-                <img src="{%static 'images/logo.png'%}" alt="Logo" class="ecom-navbar-logo" style="margin-left: 101px; height: 70px;"
-                    height="50">
-            </a>
+            <!-- Search Bar -->
+            <form class="search-bar mx-lg-4 my-2 my-lg-0 w-100">
+                <i class="fas fa-bars me-2"></i>
+                <input type="text" placeholder="Hinted search text" />
+                <button type="submit"><i class="fas fa-search"></i></button>
+            </form>
 
-            <!-- Navbar Content -->
-            <div class="collapse navbar-collapse" id="ecomNavbarContent">
-                <ul class="navbar-nav ms-auto mb-5 mb-lg-0 ecom-navbar-links">
-                    <li class="nav-item me-5">
-                        <a class="nav-link" href="{%url 'home'%}">Home</a>
-                    </li>
-                    <li class="nav-item me-5">
-                        <a class="nav-link" href="{%url 'products'%}">Products</a>
-                    </li>
+            <!-- Icons -->
+            <div class="nav-icons d-flex justify-content-end mt-2 mt-lg-0">
+                <a href="{% url 'cart' %}" class="position-relative text-white me-3 d-flex align-items-center">
+                    <i class="fas fa-shopping-cart fa-lg me-1" style="color: orange;"></i>
+                    <span class="d-none d-md-inline" style="color: orange;">Cart</span>
 
-                    <!-- 📂 Categories Dropdown -->
-                    <li class="nav-item dropdown me-5">
-                        <a class="nav-link dropdown-toggle" href="#" id="categoryDropdown" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                            Categories
+                    <!-- Cart count badge -->
+                    <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                        3
+                    </span>
+                </a>
+
+                <!-- <a href="#"><i class="fas fa-user"></i><span class="d-none d-md-inline">Account</span></a> -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Bottom Menu Navbar -->
+    <nav class="navbar navbar-expand-lg bottom-navbar">
+        <div class="container-fluid">
+            <button class="navbar-toggler bg-light ms-auto" type="button" data-bs-toggle="collapse"
+                data-bs-target="#menuNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="menuNav">
+                <ul class="navbar-nav text-center">
+
+                    <a class="nav-link me-2" href="{% url 'home' %}" role="button">
+                        Home
+                    </a>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                            Shop by Category
                         </a>
-                        <ul class="dropdown-menu" aria-labelledby="categoryDropdown">
-                            <li>
-                                <a class="dropdown-item text-black" href="{% url 'gold_plated' %}">
-                                    <img src="https://plus.unsplash.com/premium_photo-1724762183134-c17cf5f5bed2?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8Z29sZCUyMGpld2VsbGVyeXxlbnwwfHwwfHx8MA%3D%3D"
-                                        class="me-2" alt="Gold">18k Gold Plated
-                                </a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item text-black" href="{% url 'swarovski' %}">
-                                    <img src="https://luxebook.in/wp-content/uploads/2023/12/Swarovski-Collection-I-Campaign-Shot-850x560.jpg"
-                                        class="me-2" alt="Swarovski">Swarovski
-                                </a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item text-black" href="{% url 'celebrity' %}">
-                                    <img src="https://filmfare.wwmindia.com/thumb/content/2023/feb/kiaraadvaniandsidharthmalhotra41676621821.jpg?width=1200&height=900"
-                                        class="me-2" alt="Celebrity">Celebrity Collection
-                                </a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item text-black" href="{% url 'necklace' %}">
-                                    <img src="https://kolhapurisaaj.in/cdn/shop/files/Traditional_Forming_Gold_Choker_Necklace_Set_with_Floral_Design_and_Dangling_Accents_3.jpg?v=1730805753"
-                                        class="me-2" alt="Necklace">Necklace
-                                </a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item text-black" href="{% url 'bangles' %}">
-                                    <img src="https://priyaasi.com/cdn/shop/products/BA-PR-40126-2-4_1.jpg?v=1716880480"
-                                        class="me-2" alt="Bangles">Bangles
-                                </a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item text-black" href="{% url 'bracelets' %}">
-                                    <img src="https://assets.ajio.com/medias/sys_master/root/20240129/KgT7/65b6c7de16fd2c6e6ac51014/-473Wx593H-467015089-multi-MODEL.jpg"
-                                        class="me-2" alt="Bracelets">Bracelets
-                                </a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item text-black" href="{% url 'earrings' %}">
-                                    <img src="https://www.jiomart.com/images/product/original/rvhc0zbkeu/arch-fashion-traditional-gold-platted-wedding-jumkhi-earrings-collection-erg2063-product-images-orvhc0zbkeu-p602556161-0-202306231317.jpg?im=Resize=(420,420)"
-                                        class="me-2" alt="Earrings">Earrings
-                                </a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item text-black" href="{% url 'anklets' %}">
-                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVGCR-N-kPN8ncxnn_Jcv4UFrzGWh1h8MYwA&s"
-                                        class="me-2" alt="Anklets">Anklets
-                                </a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item text-black" href="{% url 'rings' %}">
-                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNa6EwBpjwx6VXeNZZ0DUI_ePTJBsGn9pclg&s"
-                                        class="me-2" alt="Rings">Rings
-                                </a>
-                            </li>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Rings</a></li>
+                            <li><a class="dropdown-item" href="#">Chains</a></li>
                         </ul>
                     </li>
-
-                    <li class="nav-item me-5">
-                        <a class="nav-link" href="{%url 'my_orders'%}">My orders</a>
-                    </li>
-                    <li class="nav-item me-5">
-                        <a class="nav-link" href="{%url 'about'%}">About Us</a>
-                    </li>
-
-                    <li class="nav-item me-5">
-                        <a class="nav-link" href="{%url 'gallery'%}">Gallery</a>
-                    </li>
-                    <li class="nav-item me-5">
-                        <a class="nav-link" href="{%url 'contact'%}">Contact</a>
-                    </li>
-
-
-                    <!-- 🛒 Cart Icon (Desktop View) with Badge -->
-                    <li class="nav-item d-none d-lg-block ms-3 position-relative">
-                        <a class="nav-link fs-5 position-relative" href="{%url 'cart'%}">
-                            <i class="fas fa-shopping-cart"></i>
-                            <span
-                                class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger text-white px-2 py-1"
-                                style="font-size: 0.7rem;">
-                                3
-                            </span>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
+                            Gift Store
                         </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Girlfriend</a></li>
+                            <li><a class="dropdown-item" href="#">Wife</a></li>
+                            <li><a class="dropdown-item" href="#">Mother</a></li>
+                            <li><a class="dropdown-item" href="#">Sister</a></li>
+
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
+                            Women's Jewellery
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Earrings</a></li>
+                            <li><a class="dropdown-item" href="#">Bracelets</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link me-2" href="{% url 'home' %}" role="button">
+                        new Arrivals
+                    </a>
                     </li>
                 </ul>
             </div>
@@ -180,10 +126,6 @@
 
 
 
-
-
-
-    <!-- Loader HTML -->
     <!-- Loader -->
     <div id="loader-wrapper">
         <div class="loader-brand">
@@ -194,6 +136,14 @@
 
     <!-- call button -->
     <div class="floating-buttons">
+
+        <a href="#" target="_blank" class="floating-button cart-button position-relative">
+            <i class="fa-solid fa-cart-shopping fa-2x"></i>
+            <span class="cart-count position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                3
+            </span>
+        </a>
+
 
         <a href="https://wa.me/919747878317" target="_blank" class="floating-button whatsapp-button">
             <i class="fab fa-whatsapp"></i>

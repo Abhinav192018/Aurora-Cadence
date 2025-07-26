@@ -2,6 +2,20 @@ from django.db import models
 # Create your models here.
 
 
+class Type(models.Model):
+    name = models.CharField(max_length=50)
+
+    def __str__(self):
+        return self.name
+    
+
+
+class Color(models.Model):
+    name=models.CharField(max_length=50)
+
+    def __str__(self):
+        return self.name
+
 class Category(models.Model):
     name = models.CharField(max_length=100)
 
@@ -11,7 +25,9 @@ class Category(models.Model):
 
 class Product(models.Model):
 
+    type_obj=models.ForeignKey(Type, on_delete=models.CASCADE, related_name='type_obj')
     category_obj = models.ForeignKey(Category, on_delete=models.CASCADE, related_name='category_obj')
+    Color_obj=models.ManyToManyField(Color,related_name='color_obj')
 
     is_gold_plated=models.BooleanField(default=False)
 
